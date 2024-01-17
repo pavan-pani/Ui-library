@@ -1,5 +1,5 @@
 import React, { FC, MouseEvent } from 'react';
-import "./button-style.css";
+import "./button-style.scss";
 
 //defineing button types and sizes
 type ButtonType = "primary" | "secondary" | "outline" | "text";
@@ -16,7 +16,7 @@ export interface ButtonProps {
 
 //react button
 const Buttons: FC<ButtonProps> = ({ ...props }) => {
-    const buttonClass = `${props.variants} ${props.size}`
+    const buttonClass = `${props.variants} ${props.size} ${props.disabled}`
     return (
         <button className={buttonClass} type="button" onClick={props.onClick}>
             {props.text}
