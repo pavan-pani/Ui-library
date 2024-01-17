@@ -1,0 +1,33 @@
+
+import DatePicker, { DatePickerProps } from './Ui_components/date-pickers/DatePicker'
+
+function App() {
+  const [inputValue, setInputValue] = useState<string>('');
+ 
+  const handlechange = (value:any) => {
+    // Implement your resubmit logic here
+    setInputValue(() => {
+      console.log(value); // Log the current value
+      return value; // Set the new value
+    });
+  };
+
+
+
+  const inputJson1:DatePickerProps={
+    type: 'date',
+    label: "Start Date",
+    value: inputValue,
+    disabled: true,
+    onChange: handlechange,
+    required: false,
+  }
+ 
+  return (
+    <>
+        <DatePicker {...inputJson1}/>
+    </>
+  )
+  }
+
+export default App

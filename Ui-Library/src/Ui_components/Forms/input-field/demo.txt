@@ -1,0 +1,29 @@
+import Input, { InputProps } from './Ui_components/Forms/input-field/Input'
+
+function App() {
+  const [inputValue, setInputValue] = useState<string>('');
+
+  const handlechange = (value:any) => {
+    setInputValue(() => {
+      console.log(value); // Log the current value
+      return value; // Set the new value
+    });
+  };
+
+
+  const inputJson1:InputProps={
+    type: 'text',
+    label: "test button",
+    value: inputValue,
+    disabled: false,
+    onChange: handlechange,
+    required: true,
+    placeholder: 'Enter your input'
+  }
+ 
+  return (
+        <Input {...inputJson1}/>
+    )
+  }
+
+export default App
