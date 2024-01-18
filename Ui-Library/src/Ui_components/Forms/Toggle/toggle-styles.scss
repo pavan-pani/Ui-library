@@ -1,0 +1,53 @@
+/* ToggleButton.css */
+
+.toggle {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.toggle-switch {
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding: 10px 30px;
+    /* Adjust the padding as needed */
+    border: 2px solid #000;
+    // border-radius: 20px;
+    overflow: hidden;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #000000;
+    /* Set the background color for the slider */
+    // border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.toggle-switch.active .slider {
+    transform: translateX(100%);
+    /* Move the slider to the right when the toggle is active */
+}
+
+.label-text {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    color: #a7a5a5;
+    font-weight: bolder;
+    transition: color 0.3s;
+}
+
+.active-text {
+    transition: all 0.3s !important;
+    box-sizing: border-box;
+    color: #000 !important;
+    /* Change the text color when the slider is on the right side */
+}
