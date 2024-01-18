@@ -9,30 +9,28 @@ import DatePicker, { DatePickerProps } from './Ui_components/date-pickers/DatePi
 import Checkbox, { CheckboxProps } from './Ui_components/Forms/Check-box/CheckBox'
 import RadioButton, { RadioButtonProps } from './Ui_components/Forms/Radio-button/RadioButton'
 import Textarea, { TextareaProps } from './Ui_components/Forms/Text-area/TextArea'
+import ToggleButton, { ToggleButtonProps } from './Ui_components/Forms/Toggle/Toggle'
 
 function App() {
 
-  const [inputValue, setInputValue] = useState<string>('');
+  const [isToggled, setIsToggled] = useState<boolean>(false);
 
-  const handleTextareaChange = (value: string) => {
-    setInputValue(()=>{
-      return value
-    });
+  const handleToggleChange = (checked: boolean) => {
+    setIsToggled(checked);
   };
-  console.log(inputValue);
-
-  const inputJson:TextareaProps={
-    value: inputValue,
-    onChange: handleTextareaChange,
-    label:"Text area",
-    placeholder:"Enter Yout text here",
-    disabled: false,
-    required: false,
+  console.log(isToggled);
+  const inputJson:ToggleButtonProps={
+    offState: "OFF",
+    onState: "ON",
+    checked: isToggled,
+    onChange: handleToggleChange
   }
-
+  
   return (
     <div>
-      <Textarea {...inputJson}/>
+      <ToggleButton {...inputJson}/>
+
+      <p>Toggle State: {isToggled ? 'On' : 'Off'}</p>
     </div>
   );
 }
