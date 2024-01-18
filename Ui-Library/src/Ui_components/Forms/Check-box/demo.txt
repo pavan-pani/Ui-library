@@ -1,11 +1,3 @@
-import { ButtonHTMLAttributes, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import './index.css'
-import Buttons, { ButtonProps } from './Ui_components/Button/Buttons'
-import Input, { InputProps } from './Ui_components/Forms/input-field/Input'
-import DatePicker, { DatePickerProps } from './Ui_components/date-pickers/DatePicker'
 import Checkbox, { CheckboxProps } from './Ui_components/Forms/Check-box/CheckBox'
 
 function App() {
