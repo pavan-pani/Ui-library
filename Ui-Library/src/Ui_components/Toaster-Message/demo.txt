@@ -1,0 +1,12 @@
+import Toast from './Ui_components/Toaster-Message/Toaster'
+
+function App() {
+  return (
+    <div>
+      {/* <Toast type="success" message="Success message here" /> */}
+      <Toast type="warning" message="Success message here" />
+      {/* <Toast type="danger" message="Success message here" /> */}
+    </div>
+  );
+}
+export default App

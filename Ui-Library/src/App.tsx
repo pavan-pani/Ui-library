@@ -12,19 +12,14 @@ import Textarea, { TextareaProps } from './Ui_components/Forms/Text-area/TextAre
 import Dropdown, { DropdownProps } from './Ui_components/Drop-down/Drop-down'
 import MultiSelectDropdown, { MultiSelectDropdownProps } from './Ui_components/Mult-Select/MultSelect-Dropdown'
 import Tabs from './Ui_components/Tabs/Tab'
+import Toast from './Ui_components/Toaster-Message/Toaster'
 
 function App() {
-  const tabs = [
-    { label: 'Tab 1', content: <div>Content for Tab 1</div> },
-    { label: 'Tab 2', content: <div>Content for Tab 2</div>, disabled: true },
-    { label: 'Tab 3', content: <div>Content for Tab 3</div> },
-  ];
-
-  console.log(tabs[0].disabled);
-  
   return (
     <div>
-      <Tabs tabs={tabs} />
+      {/* <Toast type="success" message="Success message here" /> */}
+      <Toast type="warning" message="Success message here" />
+      {/* <Toast type="danger" message="Success message here" /> */}
     </div>
   );
 }
