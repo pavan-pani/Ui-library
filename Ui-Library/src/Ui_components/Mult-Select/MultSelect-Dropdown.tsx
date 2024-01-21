@@ -4,10 +4,11 @@ import './multSelect-styles.scss'
 export interface MultiSelectDropdownProps {
   options: string[];
   disabled?:boolean;
+  label:string
   onSelect: (selectedOptions: string[]) => void;
 }
 
-const MultiSelectDropdown: React.FC<MultiSelectDropdownProps> = ({ options, onSelect, disabled}) => {
+const MultiSelectDropdown: React.FC<MultiSelectDropdownProps> = ({...props}) => {
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -29,12 +30,13 @@ const MultiSelectDropdown: React.FC<MultiSelectDropdownProps> = ({ options, onSe
   };
 
   const handleConfirm = () => {
-    onSelect(selectedOptions);
+    props.onSelect(selectedOptions);
     closeDropdown();
   };
 
   return (
-    <div className={`dropdown-container ${disabled ? 'disabled' : ''}`}>
+    <div className={`dropdown-container ${ props.disabled ? 'disabled' : ''}`}>
+      <div className='labal'>{ props.label}</div>
       <div className="selected-options" onClick={toggleDropdown}>
         {selectedOptions.length > 0
           ? selectedOptions.join(', ')
@@ -43,7 +45,7 @@ const MultiSelectDropdown: React.FC<MultiSelectDropdownProps> = ({ options, onSe
       {isOpen && (
         <div className="options-container">
           <ul className="options-list">
-            {options.map((option) => (
+            { props.options.map((option) => (
               <li
                 key={option}
                 onClick={() => handleSelect(option)}

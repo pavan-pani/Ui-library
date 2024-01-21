@@ -16,21 +16,20 @@ import Toast from './Ui_components/Toaster-Message/Toaster'
 import Accordion from './Ui_components/Accordion/Accordion'
 
 function App() {
-  const tabs = [
-    { label: 'Tab 1', content: <div>Content for Tab 1</div> },
-    { label: 'Tab 2', content: <div>Content for Tab 2</div>, disabled: true },
-    { label: 'Tab 3', content: <div>Content for Tab 3</div> },
-  ];
-  const accordionSections = [
-    { title: 'Section 1', content: 'Content for section 1' },
-    { title: 'Section 2', content: <Tabs tabs={tabs}/> },
-    // Add more sections as needed
-  ];
+  const handleMultiSelect = (selectedOptions: string[]) => {
+    console.log('Selected options:', selectedOptions);
+    // Perform any other actions based on the selected options
+  };
+  const inputJson:MultiSelectDropdownProps={
+    options:['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5'],
+    disabled:false,
+    label:"Select options",
+    onSelect:handleMultiSelect
+  }
 
   return (
-    <div className="app-container">
-      <h1>Accordion Example</h1>
-      <Accordion sections={accordionSections} />
+    <div>
+      <MultiSelectDropdown {...inputJson}/>
     </div>
   );
 }
