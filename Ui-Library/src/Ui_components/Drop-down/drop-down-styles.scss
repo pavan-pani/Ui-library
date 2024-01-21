@@ -4,6 +4,13 @@
     position: relative;
     display: inline-block;
   }
+  .dropdown-container.disabled {
+    opacity: 0.5; /* Reduce opacity to visually indicate the disabled state */
+    pointer-events: none; /* Disable pointer events to make it non-interactive */
+    &:hover{
+        cursor: not-allowed;
+    }
+  }
   
   .selected-option {
     padding: 10px;
@@ -36,6 +43,7 @@
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+    border-bottom: 1px solid #454545;
   }
   
   .options-list li:hover {
@@ -48,7 +56,7 @@
   }
   
   .options-list::-webkit-scrollbar-thumb {
-    background-color: #fff; /* White-colored scrollbar thumb */
+    background-color: #ffff01; /* Black-colored scrollbar thumb */
     border-radius: 5px;
   }
   

@@ -4,6 +4,7 @@ import './drop-down-styles.scss'
 export interface DropdownProps {
   options: string[];
   default:string;
+  disabled?:boolean
   onSelect: (selectedOption: string) => void;
 }
 
@@ -26,7 +27,7 @@ const Dropdown: React.FC<DropdownProps> = ({...props}) => {
   };
 
   return (
-    <div className="dropdown-container">
+    <div className={`dropdown-container ${props.disabled ? 'disabled' : ''}`}>
       <div className="selected-option" onClick={toggleDropdown}>
         {selectedOption || props.default}
       </div>
