@@ -1,0 +1,66 @@
+/* App.css (or your preferred stylesheet) */
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-container.disabled {
+    opacity: 0.5; /* Reduce opacity to visually indicate the disabled state */
+    pointer-events: none; /* Disable pointer events to make it non-interactive */
+    &:hover{
+        cursor: not-allowed;
+    }
+  }
+  
+  .selected-option {
+    padding: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    width: 110px;
+    text-align: start;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .options-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 130px;
+    border: 1px solid #ccc;
+    background-color: #000;
+    color: #fff;
+    text-align: start;
+    height: 150px;
+    overflow: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .options-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-bottom: 1px solid #454545;
+  }
+  
+  .options-list li:hover {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  .options-list::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .options-list::-webkit-scrollbar-thumb {
+    background-color: #ffff01; /* Black-colored scrollbar thumb */
+    border-radius: 5px;
+  }
+  
+  .options-list::-webkit-scrollbar-track {
+    background-color: #000; /* Track color */
+    border-radius: 5px;
+  }

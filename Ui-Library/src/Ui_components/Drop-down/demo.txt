@@ -1,0 +1,22 @@
+import Dropdown, { DropdownProps } from './Ui_components/Drop-down/Drop-down'
+
+function App() {
+  const handleSelect = (selectedOption: string) => {
+    console.log(`Selected: ${selectedOption}`);
+    // Perform any other actions based on the selected option
+  };
+ 
+  const inputJson:DropdownProps={
+    options : ['Option 1', 'Option 2', 'Option 3','Option 4', 'Option 5', 'Option 6'],
+    default:"Select an option",
+    onSelect:handleSelect,
+    disabled:false
+  }
+  
+  return (
+    <div>
+      <Dropdown {...inputJson} />
+    </div>
+  );
+}
+export default App
