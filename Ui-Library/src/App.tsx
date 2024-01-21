@@ -25,7 +25,6 @@ function App() {
 
   return (
     <div>
-      <h1>Your Component</h1>
       <MultiSelectDropdown {...inputJson}/>
     </div>
   );
