@@ -11,21 +11,15 @@ import RadioButton, { RadioButtonProps } from './Ui_components/Forms/Radio-butto
 import Textarea, { TextareaProps } from './Ui_components/Forms/Text-area/TextArea'
 import Dropdown, { DropdownProps } from './Ui_components/Drop-down/Drop-down'
 import MultiSelectDropdown, { MultiSelectDropdownProps } from './Ui_components/Mult-Select/MultSelect-Dropdown'
+import Tabs from './Ui_components/Tabs/Tab'
+import Toast from './Ui_components/Toaster-Message/Toaster'
 
 function App() {
- const handleMultiSelect = (selectedOptions: string[]) => {
-    console.log('Selected options:', selectedOptions);
-    // Perform any other actions based on the selected options
-  };
-  const inputJson:MultiSelectDropdownProps={
-    options:['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5'],
-    disabled:false,
-    onSelect:handleMultiSelect
-  }
-
   return (
     <div>
-      <MultiSelectDropdown {...inputJson}/>
+      {/* <Toast type="success" message="Success message here" /> */}
+      <Toast type="warning" message="Success message here" />
+      {/* <Toast type="danger" message="Success message here" /> */}
     </div>
   );
 }
