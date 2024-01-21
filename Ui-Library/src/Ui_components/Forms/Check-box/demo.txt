@@ -1,0 +1,28 @@
+import Checkbox, { CheckboxProps } from './Ui_components/Forms/Check-box/CheckBox'
+
+function App() {
+ 
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = (newState: boolean) => {
+    setIsChecked(() => {
+      console.log(newState); // Log the current value
+      return newState; // Set the new value
+    });
+    
+  };
+  const inputJson1:CheckboxProps={
+    checked: isChecked,
+    label: "test check-box",
+    disabled: false,
+    onChange: handleCheckboxChange,
+  }
+
+  return (
+    <div>
+      <Checkbox {...inputJson1}/>
+    </div>
+  );
+  }
+
+export default App

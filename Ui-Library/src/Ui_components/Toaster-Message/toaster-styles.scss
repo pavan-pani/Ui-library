@@ -1,0 +1,41 @@
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+  
+    &.success {
+      background-color: #4caf50;
+      color: #fff;
+    }
+  
+    &.warning {
+      background-color: #ff9800;
+      color: #fff;
+    }
+  
+    &.danger {
+      background-color: #f44336;
+      color: #fff;
+    }
+  
+    .close-icon {
+      color: #fff;
+      cursor: pointer;
+      font-size: 18px;
+    }
+  
+    .message {
+      flex: 1;
+      margin-right: 10px;
+    }
+  }
+  

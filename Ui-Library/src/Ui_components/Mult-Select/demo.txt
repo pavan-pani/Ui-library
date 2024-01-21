@@ -1,0 +1,21 @@
+import MultiSelectDropdown, { MultiSelectDropdownProps } from './Ui_components/Mult-Select/MultSelect-Dropdown'
+
+function App() {
+  const handleMultiSelect = (selectedOptions: string[]) => {
+    console.log('Selected options:', selectedOptions);
+    // Perform any other actions based on the selected options
+  };
+  const inputJson:MultiSelectDropdownProps={
+    options:['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5'],
+    disabled:false,
+    label:"Select options",
+    onSelect:handleMultiSelect
+  }
+
+  return (
+    <div>
+      <MultiSelectDropdown {...inputJson}/>
+    </div>
+  );
+}
+export default App

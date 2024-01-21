@@ -1,0 +1,91 @@
+/* App.css (or your preferred stylesheet) */
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-container.disabled {
+    opacity: 0.5; /* Reduce opacity to visually indicate the disabled state */
+    pointer-events: none; /* Disable pointer events to make it non-interactive */
+    &:hover{
+        cursor: not-allowed;
+    }
+  }
+  
+  .selected-options {
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    width: 110px;
+    height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .options-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 130px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .options-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .options-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid #454545;
+  }
+  
+//   .options-list li:hover {
+//     background-color: #f0f0f0;
+//   }
+  
+  .options-list .selected {
+    background-color: #4da44d; /* Background color for selected options */
+  }
+  
+  .confirm-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #515050; /* Green background color for the confirm button */
+    color: #fff;
+    cursor: pointer;
+    &:hover{
+        background: #4da44d;
+    }
+  }
+  
+  .options-container::-webkit-scrollbar {
+    width: 3px; /* Set the width of the scrollbar */
+  }
+  
+  .options-container::-webkit-scrollbar-thumb {
+    background-color: #ffff01; /* Black-colored scrollbar thumb */
+    border-radius: 5px;
+  }
+  
+  .options-container::-webkit-scrollbar-track {
+    background-color: #000; /* Track color */
+    border-radius: 5px;
+  }
+
+  .labal{
+    text-align: start;
+  }

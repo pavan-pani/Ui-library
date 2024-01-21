@@ -1,0 +1,29 @@
+import Textarea, { TextareaProps } from './Ui_components/Forms/Text-area/TextArea'
+
+function App() {
+
+  const [inputValue, setInputValue] = useState<string>('');
+
+  const handleTextareaChange = (value: string) => {
+    setInputValue(()=>{
+      return value
+    });
+  };
+  console.log(inputValue);
+
+  const inputJson:TextareaProps={
+    value: inputValue,
+    onChange: handleTextareaChange,
+    label:"Text area",
+    placeholder:"Enter Yout text here",
+    disabled: false,
+    required: false,
+  }
+
+  return (
+    <div>
+      <Textarea {...inputJson}/>
+    </div>
+  );
+}
+export default App
