@@ -1,0 +1,36 @@
+/* Tabs container style */
+.tabs-container {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Tab styles */
+  .tab {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease-in-out;
+  }
+  .tabs{
+    display: flex;
+  }
+  
+  .tab:hover {
+    background-color: #ebebeb7f; /* Change the color on hover */
+  }
+  
+  /* Active tab style */
+  .tab.active {
+    border-bottom-color: #000;
+  }
+  
+  /* Content area style */
+  .tab-content {
+    margin-top: 10px;
+  }
+  /* Updated Tab styles for disabled state */
+.tab.disabled {
+    cursor: not-allowed;
+    opacity: 0.5; /* Adjust the opacity for a disabled look */
+  }
+  
+  

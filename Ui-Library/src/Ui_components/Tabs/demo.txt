@@ -1,0 +1,18 @@
+import Tabs from './Ui_components/Tabs/Tab'
+
+function App() {
+  const tabs = [
+    { label: 'Tab 1', content: <div>Content for Tab 1</div> },
+    { label: 'Tab 2', content: <div>Content for Tab 2</div>, disabled: true },
+    { label: 'Tab 3', content: <div>Content for Tab 3</div> },
+  ];
+
+  console.log(tabs[0].disabled);
+  
+  return (
+    <div>
+      <Tabs tabs={tabs} />
+    </div>
+  );
+}
+export default App
