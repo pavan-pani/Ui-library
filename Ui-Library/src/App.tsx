@@ -13,13 +13,23 @@ import Dropdown, { DropdownProps } from './Ui_components/Drop-down/Drop-down'
 import MultiSelectDropdown, { MultiSelectDropdownProps } from './Ui_components/Mult-Select/MultSelect-Dropdown'
 import Tabs from './Ui_components/Tabs/Tab'
 import Toast from './Ui_components/Toaster-Message/Toaster'
+import Accordion from './Ui_components/Accordion/Accordion'
 
 function App() {
+  const handleMultiSelect = (selectedOptions: string[]) => {
+    console.log('Selected options:', selectedOptions);
+    // Perform any other actions based on the selected options
+  };
+  const inputJson:MultiSelectDropdownProps={
+    options:['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5'],
+    disabled:false,
+    label:"Select options",
+    onSelect:handleMultiSelect
+  }
+
   return (
     <div>
-      {/* <Toast type="success" message="Success message here" /> */}
-      <Toast type="warning" message="Success message here" />
-      {/* <Toast type="danger" message="Success message here" /> */}
+      <MultiSelectDropdown {...inputJson}/>
     </div>
   );
 }

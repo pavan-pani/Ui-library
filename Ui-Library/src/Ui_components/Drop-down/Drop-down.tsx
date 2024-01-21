@@ -3,12 +3,13 @@ import './drop-down-styles.scss'
 
 export interface DropdownProps {
   options: string[];
-  default:string;
-  disabled?:boolean
+  default: string;
+  disabled?: boolean
+  labal: string;
   onSelect: (selectedOption: string) => void;
 }
 
-const Dropdown: React.FC<DropdownProps> = ({...props}) => {
+const Dropdown: React.FC<DropdownProps> = ({ ...props }) => {
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -28,6 +29,7 @@ const Dropdown: React.FC<DropdownProps> = ({...props}) => {
 
   return (
     <div className={`dropdown-container ${props.disabled ? 'disabled' : ''}`}>
+      <div className='labal'>{props.labal}</div>
       <div className="selected-option" onClick={toggleDropdown}>
         {selectedOption || props.default}
       </div>
@@ -42,6 +44,7 @@ const Dropdown: React.FC<DropdownProps> = ({...props}) => {
       )}
     </div>
   );
+
 };
 
 export default Dropdown;

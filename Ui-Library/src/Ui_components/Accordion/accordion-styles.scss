@@ -1,0 +1,37 @@
+// Accordion.scss
+
+.accordion {
+  width: 100%;
+}
+
+.accordion-section {
+  border: 1px solid #000;
+  margin-bottom: 8px;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+  background-color: #fff;
+  // border-bottom: 1px solid #000;
+
+  &:hover {
+    background-color: #c4c4c457;
+  }
+
+  &.active {
+    background-color: #000; // Change to your active background color
+    color: #fff;
+  }
+
+  .arrow {
+    font-size: 14px;
+  }
+}
+
+.accordion-content {
+  padding: 12px;
+}
