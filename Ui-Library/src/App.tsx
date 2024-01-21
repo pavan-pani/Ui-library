@@ -9,28 +9,23 @@ import DatePicker, { DatePickerProps } from './Ui_components/date-pickers/DatePi
 import Checkbox, { CheckboxProps } from './Ui_components/Forms/Check-box/CheckBox'
 import RadioButton, { RadioButtonProps } from './Ui_components/Forms/Radio-button/RadioButton'
 import Textarea, { TextareaProps } from './Ui_components/Forms/Text-area/TextArea'
-import ToggleButton, { ToggleButtonProps } from './Ui_components/Forms/Toggle/Toggle'
+import Dropdown, { DropdownProps } from './Ui_components/Drop-down/Drop-down'
 
 function App() {
-
-  const [isToggled, setIsToggled] = useState<boolean>(false);
-
-  const handleToggleChange = (checked: boolean) => {
-    setIsToggled(checked);
+  const handleSelect = (selectedOption: string) => {
+    console.log(`Selected: ${selectedOption}`);
+    // Perform any other actions based on the selected option
   };
-  console.log(isToggled);
-  const inputJson:ToggleButtonProps={
-    offState: "OFF",
-    onState: "ON",
-    checked: isToggled,
-    onChange: handleToggleChange
+ 
+  const inputJson:DropdownProps={
+    options : ['Option 1', 'Option 2', 'Option 3','Option 4', 'Option 5', 'Option 6'],
+    default:"Select an option",
+    onSelect:handleSelect
   }
   
   return (
     <div>
-      <ToggleButton {...inputJson}/>
-
-      <p>Toggle State: {isToggled ? 'On' : 'Off'}</p>
+      <Dropdown {...inputJson} />
     </div>
   );
 }
