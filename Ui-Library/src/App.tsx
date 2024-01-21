@@ -13,13 +13,24 @@ import Dropdown, { DropdownProps } from './Ui_components/Drop-down/Drop-down'
 import MultiSelectDropdown, { MultiSelectDropdownProps } from './Ui_components/Mult-Select/MultSelect-Dropdown'
 import Tabs from './Ui_components/Tabs/Tab'
 import Toast from './Ui_components/Toaster-Message/Toaster'
+import Accordion from './Ui_components/Accordion/Accordion'
 
 function App() {
+  const tabs = [
+    { label: 'Tab 1', content: <div>Content for Tab 1</div> },
+    { label: 'Tab 2', content: <div>Content for Tab 2</div>, disabled: true },
+    { label: 'Tab 3', content: <div>Content for Tab 3</div> },
+  ];
+  const accordionSections = [
+    { title: 'Section 1', content: 'Content for section 1' },
+    { title: 'Section 2', content: <Tabs tabs={tabs}/> },
+    // Add more sections as needed
+  ];
+
   return (
-    <div>
-      {/* <Toast type="success" message="Success message here" /> */}
-      <Toast type="warning" message="Success message here" />
-      {/* <Toast type="danger" message="Success message here" /> */}
+    <div className="app-container">
+      <h1>Accordion Example</h1>
+      <Accordion sections={accordionSections} />
     </div>
   );
 }
