@@ -14,14 +14,14 @@ const Home = () => {
         text: "Feedback",
         variants: "primary",
         disabled: false,
-        size:"large",
+        size: "large",
         onClick: handleClick,
     }
     const inputJson1: ButtonProps = {
         text: "Docs",
         variants: "primary",
         disabled: false,
-        size:"large",
+        size: "large",
         onClick: handleClick,
     }
     return (
