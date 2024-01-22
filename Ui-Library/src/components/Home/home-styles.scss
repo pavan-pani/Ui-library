@@ -11,6 +11,7 @@
         flex-direction: column;
         .logo{
             align-self: center;
+            margin-top: -60px !important;
             img{
                 transition: transform 0.5s ease;
                 height: 170px;
@@ -96,6 +97,7 @@
       padding: 10px;
       .left{
         display: flex;
+        
         .discreption{
             text-align: center;
         }
@@ -104,6 +106,7 @@
             min-width: fit-content;
         }
         .logo{
+            margin-top: 0px !important;
             img{
                 height: 100px !important;
             }
