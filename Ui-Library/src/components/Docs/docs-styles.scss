@@ -1,0 +1,51 @@
+.doc-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 100px;
+    background-color: #fff;
+    .btn-item {
+        display: flex;
+        gap: 40px;
+        padding: 30px 0px;
+        border-bottom: 2px solid #1b1b1b;
+        .doc-text {
+            color: #010101;
+            width: 400px;
+            margin-left: 50px;
+        }
+        .btn-components {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            .large-buttons {
+                display: flex;
+                gap: 40px;
+            }
+            .medium-buttons {
+                display: flex;
+                gap: 40px;
+            }
+        }
+    }
+    .input-item{
+        display: flex;
+        gap: 40px;
+        padding: 30px 0px;
+        border-bottom: 2px solid #1b1b1b;
+        .doc-text {
+            color: #010101;
+            width: 400px;
+            margin-left: 50px;
+        }
+        .input-components{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            .input-boxs{
+                display: flex;
+                gap: 40px;
+            }
+        }
+    }
+}
