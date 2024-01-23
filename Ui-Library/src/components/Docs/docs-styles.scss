@@ -48,4 +48,165 @@
             }
         }
     }
+    .CheckBox-item{
+        display: flex;
+        gap: 40px;
+        padding: 30px 0px;
+        border-bottom: 2px solid #1b1b1b;
+        .doc-text {
+            color: #010101;
+            width: 400px;
+            margin-left: 50px;
+        }
+        .CheckBox-components{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            .Check-Box{
+                display: flex;
+                gap: 40px;
+            }
+        }
+    }
+    .radio-item{
+        display: flex;
+        gap: 40px;
+        padding: 30px 0px;
+        border-bottom: 2px solid #1b1b1b;
+        .doc-text {
+            color: #010101;
+            width: 400px;
+            margin-left: 50px;
+        }
+        .radio-components{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            .radio-Box{
+                display: flex;
+                gap: 40px;
+            }
+        }
+    }
+    .textarea-item{
+        display: flex;
+        gap: 40px;
+        padding: 30px 0px;
+        border-bottom: 2px solid #1b1b1b;
+        .doc-text {
+            color: #010101;
+            width: 400px;
+            margin-left: 50px;
+        }
+        .textarea-components{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            .textarea-Box{
+                display: flex;
+                gap: 40px;
+            }
+        }
+    }
+    .date-item{
+        display: flex;
+        gap: 40px;
+        padding: 30px 0px;
+        border-bottom: 2px solid #1b1b1b;
+        .doc-text {
+            color: #010101;
+            width: 400px;
+            margin-left: 50px;
+        }
+        .date-components{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            .date-Box{
+                display: flex;
+                gap: 40px;
+            }
+        }
+    }
+    .dropDown-item{
+        display: flex;
+        gap: 40px;
+        padding: 30px 0px;
+        border-bottom: 2px solid #1b1b1b;
+        .doc-text {
+            color: #010101;
+            width: 400px;
+            margin-left: 50px;
+        }
+        .dropDown-components{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            .dropDown-Box{
+                display: flex;
+                gap: 40px;
+            }
+        }
+    }
+    .toggle-item{
+        display: flex;
+        gap: 40px;
+        padding: 30px 0px;
+        border-bottom: 2px solid #1b1b1b;
+        .doc-text {
+            color: #010101;
+            width: 400px;
+            margin-left: 50px;
+        }
+        .toggle-components{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            .toggle-Box{
+                display: flex;
+                gap: 40px;
+            }
+        }
+    }
+    .Accordions-item{
+        display: flex;
+        gap: 40px;
+        padding: 30px 0px;
+        border-bottom: 2px solid #1b1b1b;
+        .doc-text {
+            color: #010101;
+            width: 400px;
+            margin-left: 50px;
+        }
+        .Accordions-components{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            .Accordions-Box{
+                display: flex;
+                gap: 40px;
+            }
+        }
+    }
+    .tabs-item{
+        display: flex;
+        gap: 40px;
+        padding: 30px 0px;
+        border-bottom: 2px solid #1b1b1b;
+        .doc-text {
+            color: #010101;
+            width: 400px;
+            margin-left: 50px;
+        }
+        .tabs-components{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            .tabs-Box{
+                display: flex;
+                gap: 40px;
+            }
+        }
+    }
+
 }
