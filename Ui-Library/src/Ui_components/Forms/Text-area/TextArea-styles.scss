@@ -1,4 +1,4 @@
-textarea {
+.TEXTAREA___textarea {
     width: 400px;
     min-height: 150px;
     padding: 12px 20px;
@@ -10,29 +10,29 @@ textarea {
     resize: none;
 }
 
-.container{
+.TEXTAREA___container{
     display: flex;
     flex-direction: column;
     width: fit-content;
 }
 
-.text{
+.TEXTAREA___text{
     text-align: end;
     margin-top: 4px;
     margin-right: 4px;
     color: #5e5d5d;
 }
 
-label{
+.TEXTAREA___label{
     text-align: justify;
     margin-bottom: 2px;
     margin-left: 2px;
 }
-span{
+.TEXTAREA___span{
     color: red;
     margin-left: 2px;
 }
-.disabled { 
+.TEXTAREA___disabled { 
     cursor: not-allowed !important;
     background-color: #cbc9c9fe !important;
 }

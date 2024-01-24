@@ -20,24 +20,24 @@ const RadioButton: React.FC<RadioButtonProps> = ({ ...props }) => {
     return (
         <div>
             {props.disabled ?
-                <label className="container disabled">{props.label}
+                <label className="RADIOBUTTON___container RADIOBUTTON___disabled">{props.label}
                     <input
                         type="radio"
                         value={props.value}
                         checked={props.checked}
                         onChange={handleInputChange}
                         name={props.name} disabled />
-                    <span className="checkmark"></span>
+                    <span className="RADIOBUTTON___checkmark"></span>
                 </label> 
                 :
-                <label className="container">{props.label}
+                <label className="RADIOBUTTON___container">{props.label}
                     <input
                         type="radio"
                         value={props.value}
                         checked={props.checked}
                         onChange={handleInputChange}
                         name={props.name} />
-                    <span className="checkmark"></span>
+                    <span className="RADIOBUTTON___checkmark"></span>
                 </label>
             }
         </div>

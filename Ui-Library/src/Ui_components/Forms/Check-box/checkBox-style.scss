@@ -1,5 +1,5 @@
 /* The container */
-.container {
+.CHECKBOX___container {
     display: block;
     position: relative;
     padding-left: 35px;
@@ -14,7 +14,7 @@
   }
   
   /* Hide the browser's default checkbox */
-  .container input {
+  .CHECKBOX___container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -23,7 +23,7 @@
   }
   
   /* Create a custom checkbox */
-  .checkmark {
+  .CHECKBOX___checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -35,30 +35,30 @@
   }
   
   /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
+  .CHECKBOX___container:hover input ~ .CHECKBOX___checkmark {
     background-color: #eee;
   }
   
   /* When the checkbox is checked, add a blue background */
-  .container input:checked ~ .checkmark {
+  .CHECKBOX___container input:checked ~ .CHECKBOX___checkmark {
     background-color: black;
     border: 2px solid black;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+  .CHECKBOX___checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
   
   /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
+  .CHECKBOX___container input:checked ~ .CHECKBOX___checkmark:after {
     display: block;
   }
   
   /* Style the checkmark/indicator */
-  .container .checkmark:after {
+  .CHECKBOX___container .CHECKBOX___checkmark:after {
     left: 9px;
     top: 3px;
     width: 5px;
@@ -72,6 +72,6 @@
 
 
   /* checkbox disabled */
-  .disabled { 
+  .CHECKBOX___disabled { 
     cursor: not-allowed !important;
   }

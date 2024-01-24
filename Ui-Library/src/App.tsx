@@ -16,20 +16,27 @@ import Toast from './Ui_components/Toaster-Message/Toaster'
 import Accordion from './Ui_components/Accordion/Accordion'
 
 function App() {
-  const handleMultiSelect = (selectedOptions: string[]) => {
-    console.log('Selected options:', selectedOptions);
-    // Perform any other actions based on the selected options
+  const [inputValue, setInputValue] = useState<string>('');
+
+  const handleTextareaChange = (value: string) => {
+    setInputValue(()=>{
+      return value
+    });
   };
-  const inputJson:MultiSelectDropdownProps={
-    options:['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5'],
-    disabled:false,
-    label:"Select options",
-    onSelect:handleMultiSelect
+  console.log(inputValue);
+
+  const inputJson:TextareaProps={
+    value: inputValue,
+    onChange: handleTextareaChange,
+    label:"Text area",
+    placeholder:"Enter Yout text here",
+    disabled: false,
+    required: false,
   }
 
   return (
     <div>
-      <MultiSelectDropdown {...inputJson}/>
+      <Textarea {...inputJson}/>
     </div>
   );
 }

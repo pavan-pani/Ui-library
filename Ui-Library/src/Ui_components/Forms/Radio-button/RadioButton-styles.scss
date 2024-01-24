@@ -1,4 +1,4 @@
-.container {
+.RADIOBUTTON___container {
     display: block;
     position: relative;
     padding-left: 35px;
@@ -13,14 +13,14 @@
   }
   
   /* Hide the browser's default radio button */
-  .container input {
+  .RADIOBUTTON___container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
   }
   
   /* Create a custom radio button */
-  .checkmark {
+  .RADIOBUTTON___checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -32,30 +32,30 @@
   }
   
   /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
+  .RADIOBUTTON___container:hover input ~ .RADIOBUTTON___checkmark {
     background-color: #eee;
   }
   
   /* When the radio button is checked, add a blue background */
-  .container input:checked ~ .checkmark {
+  .RADIOBUTTON___container input:checked ~ .RADIOBUTTON___checkmark {
     background-color: black;
     border: 2px solid black;
   }
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
+  .RADIOBUTTON___checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
   
   /* Show the indicator (dot/circle) when checked */
-  .container input:checked ~ .checkmark:after {
+  .RADIOBUTTON___container input:checked ~ .RADIOBUTTON___checkmark:after {
     display: block;
   }
   
   /* Style the indicator (dot/circle) */
-  .container .checkmark:after {
+  .RADIOBUTTON___container .RADIOBUTTON___checkmark:after {
       top: 7px;
       left: 7px;
       width: 8px;
@@ -64,6 +64,6 @@
       background: white;
   }
 
-  .disabled { 
+  .RADIOBUTTON___disabled { 
     cursor: not-allowed !important;
   }
