@@ -35,27 +35,27 @@ const MultiSelectDropdown: React.FC<MultiSelectDropdownProps> = ({...props}) => 
   };
 
   return (
-    <div className={`dropdown-container ${ props.disabled ? 'disabled' : ''}`}>
-      <div className='labal'>{ props.label}</div>
-      <div className="selected-options" onClick={toggleDropdown}>
+    <div className={`MULTISELECT___dropdown-container ${ props.disabled ? 'MULTISELECT___disabled' : ''}`}>
+      <div className='MULTISELECT___labal'>{ props.label}</div>
+      <div className="MULTISELECT___selected-options" onClick={toggleDropdown}>
         {selectedOptions.length > 0
           ? selectedOptions.join(', ')
           : 'Select options'}
       </div>
       {isOpen && (
-        <div className="options-container">
-          <ul className="options-list">
+        <div className="MULTISELECT___options-container">
+          <ul className="MULTISELECT___options-list">
             { props.options.map((option) => (
               <li
                 key={option}
                 onClick={() => handleSelect(option)}
-                className={selectedOptions.includes(option) ? 'selected' : ''}
+                className={selectedOptions.includes(option) ? 'MULTISELECT___selected' : ''}
               >
                 {option}
               </li>
             ))}
           </ul>
-          <button className="confirm-button" onClick={handleConfirm}>
+          <button className="MULTISELECT___confirm-button" onClick={handleConfirm}>
             Confirm
           </button>
         </div>

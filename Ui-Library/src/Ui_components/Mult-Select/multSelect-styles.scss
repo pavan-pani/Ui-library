@@ -1,11 +1,11 @@
 /* App.css (or your preferred stylesheet) */
 
-.dropdown-container {
+.MULTISELECT___dropdown-container {
     position: relative;
     display: inline-block;
   }
 
-  .dropdown-container.disabled {
+  .MULTISELECT___dropdown-container.MULTISELECT___disabled {
     opacity: 0.5; /* Reduce opacity to visually indicate the disabled state */
     pointer-events: none; /* Disable pointer events to make it non-interactive */
     &:hover{
@@ -13,7 +13,7 @@
     }
   }
   
-  .selected-options {
+  .MULTISELECT___selected-options {
     padding: 10px;
     border: 1px solid #000;
     background-color: #000;
@@ -26,7 +26,7 @@
     white-space: nowrap;
   }
   
-  .options-container {
+  .MULTISELECT___options-container {
     position: absolute;
     top: 100%;
     left: 0;
@@ -39,13 +39,13 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .options-list {
+  .MULTISELECT___options-list {
     list-style: none;
     padding: 0;
     margin: 0;
   }
   
-  .options-list li {
+  .MULTISELECT___options-list li {
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -56,11 +56,11 @@
 //     background-color: #f0f0f0;
 //   }
   
-  .options-list .selected {
+  .MULTISELECT___options-list .MULTISELECT___selected {
     background-color: #4da44d; /* Background color for selected options */
   }
   
-  .confirm-button {
+  .MULTISELECT___confirm-button {
     width: 100%;
     padding: 10px;
     border: none;
@@ -72,20 +72,20 @@
     }
   }
   
-  .options-container::-webkit-scrollbar {
+  .MULTISELECT___options-container::-webkit-scrollbar {
     width: 3px; /* Set the width of the scrollbar */
   }
   
-  .options-container::-webkit-scrollbar-thumb {
+  .MULTISELECT___options-container::-webkit-scrollbar-thumb {
     background-color: #ffff01; /* Black-colored scrollbar thumb */
     border-radius: 5px;
   }
   
-  .options-container::-webkit-scrollbar-track {
+  .MULTISELECT___options-container::-webkit-scrollbar-track {
     background-color: #000; /* Track color */
     border-radius: 5px;
   }
 
-  .labal{
+  .MULTISELECT___labal{
     text-align: start;
   }

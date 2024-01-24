@@ -16,12 +16,12 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({ offState, onState, checked,
     };
 
     return (
-        <div className='toggle'>
-            <div className={`label-text ${checked ? '' : 'active-text'}`}>{offState}</div>
-            <div className={`toggle-switch ${checked ? 'active' : ''}`} onClick={handleButtonClick}>
-                <div className="slider"></div>
+        <div className='TOGGLE___toggle'>
+            <div className={`TOGGLE___label-text ${checked ? '' : 'TOGGLE___active-text'}`}>{offState}</div>
+            <div className={`TOGGLE___toggle-switch ${checked ? 'TOGGLE___active' : ''}`} onClick={handleButtonClick}>
+                <div className="TOGGLE___slider"></div>
             </div>
-            <div className={`label-text ${checked ? 'active-text' : ''}`}>{onState}</div>
+            <div className={`TOGGLE___label-text ${checked ? 'TOGGLE___active-text' : ''}`}>{onState}</div>
 
         </div>
 

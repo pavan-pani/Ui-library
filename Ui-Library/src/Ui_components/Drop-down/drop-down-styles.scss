@@ -1,10 +1,10 @@
 /* App.css (or your preferred stylesheet) */
 
-.dropdown-container {
+.DROPDOWN___dropdown-container {
     position: relative;
     display: inline-block;
   }
-  .dropdown-container.disabled {
+  .DROPDOWN___dropdown-container.DROPDOWN___disabled {
     opacity: 0.5; /* Reduce opacity to visually indicate the disabled state */
     pointer-events: none; /* Disable pointer events to make it non-interactive */
     &:hover{
@@ -12,7 +12,7 @@
     }
   }
   
-  .selected-option {
+  .DROPDOWN___selected-option {
     padding: 10px;
     border: 1px solid #000;
     cursor: pointer;
@@ -22,7 +22,7 @@
     color: #fff;
   }
   
-  .options-list {
+  .DROPDOWN___options-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -39,32 +39,32 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .options-list li {
+  .DROPDOWN___options-list li {
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
     border-bottom: 1px solid #454545;
   }
   
-  .options-list li:hover {
+  .DROPDOWN___options-list li:hover {
     background-color: #f0f0f0;
     color: #000;
   }
   
-  .options-list::-webkit-scrollbar {
+  .DROPDOWN___options-list::-webkit-scrollbar {
     width: 5px;
   }
   
-  .options-list::-webkit-scrollbar-thumb {
+  .DROPDOWN___options-list::-webkit-scrollbar-thumb {
     background-color: #ffff01; /* Black-colored scrollbar thumb */
     border-radius: 5px;
   }
   
-  .options-list::-webkit-scrollbar-track {
+  .DROPDOWN___options-list::-webkit-scrollbar-track {
     background-color: #000; /* Track color */
     border-radius: 5px;
   }
 
-  .labal{
+  .DROPDOWN___labal{
     text-align: start;
   }

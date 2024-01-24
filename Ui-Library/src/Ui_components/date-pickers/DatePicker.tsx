@@ -16,10 +16,10 @@ export type DatePickerProps ={
 
 //react DatePicker
 const DatePicker: FC<DatePickerProps> = ({ ...props }) => {
-    const inputClass = `${props.type}`
+    const inputClass = `DATEPICKER___input`
     return (
-        <div className='input-box'>
-            {props.label &&  <label className='lable'>{props.label} {props.required && <span className='required'>*</span>}</label>}
+        <div className='DATEPICKER___input-box'>
+            {props.label &&  <label className='DATEPICKER___lable'>{props.label} {props.required && <span className='DATEPICKER___required'>*</span>}</label>}
             {props.disabled ? 
                 <input
                     className={inputClass}

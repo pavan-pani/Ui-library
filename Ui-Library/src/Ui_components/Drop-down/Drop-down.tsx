@@ -28,13 +28,13 @@ const Dropdown: React.FC<DropdownProps> = ({ ...props }) => {
   };
 
   return (
-    <div className={`dropdown-container ${props.disabled ? 'disabled' : ''}`}>
-      <div className='labal'>{props.labal}</div>
-      <div className="selected-option" onClick={toggleDropdown}>
+    <div className={`DROPDOWN___dropdown-container ${props.disabled ? 'DROPDOWN___disabled' : ''}`}>
+      <div className='DROPDOWN___labal'>{props.labal}</div>
+      <div className="DROPDOWN___selected-option" onClick={toggleDropdown}>
         {selectedOption || props.default}
       </div>
       {isOpen && (
-        <ul className="options-list">
+        <ul className="DROPDOWN___options-list">
           {props.options.map((option) => (
             <li key={option} onClick={() => handleSelect(option)}>
               {option}

@@ -1,12 +1,12 @@
 /* ToggleButton.css */
 
-.toggle {
+.TOGGLE___toggle {
     display: flex;
     gap: 6px;
     align-items: center;
 }
 
-.toggle-switch {
+.TOGGLE___toggle-switch {
     display: inline-block;
     cursor: pointer;
     user-select: none;
@@ -18,7 +18,7 @@
     overflow: hidden;
 }
 
-.slider {
+.TOGGLE___slider {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,12 +30,12 @@
     transition: transform 0.3s;
 }
 
-.toggle-switch.active .slider {
+.TOGGLE___toggle-switch.TOGGLE___active .TOGGLE___slider {
     transform: translateX(100%);
     /* Move the slider to the right when the toggle is active */
 }
 
-.label-text {
+.TOGGLE___label-text {
     // position: absolute;
     // top: 50%;
     // left: 50%;
@@ -45,7 +45,7 @@
     transition: color 0.3s;
 }
 
-.active-text {
+.TOGGLE___active-text {
     transition: all 0.3s !important;
     box-sizing: border-box;
     color: #000 !important;
