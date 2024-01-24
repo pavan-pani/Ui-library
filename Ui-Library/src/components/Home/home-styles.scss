@@ -1,0 +1,154 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+.container {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    // gap: 50px;
+    .left {
+        display: flex;
+        flex-direction: column;
+
+        .logo {
+            align-self: center;
+            margin-top: -60px !important;
+
+            img {
+                transition: transform 0.5s ease;
+                height: 170px;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .discreption {
+            color: #FBE4D8;
+            font-size: 30px;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+            font-family: 'Catamaran', sans-serif;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+
+        .app-discreption {
+            margin-top: 30px;
+            color: #FBE4D8;
+            font-size: 20px;
+            max-width: 600px;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+            font-family: 'Catamaran', sans-serif;
+        }
+
+        .home_buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+
+            .primary {
+                background: #6902f0;
+            }
+        }
+    }
+
+    .right {
+        max-width: fit-content;
+
+        .heading {
+            color: #9a55f3;
+            font-weight: 600;
+            font-size: 40px;
+            padding-bottom: 20px;
+        }
+
+        .points {
+            padding-left: 30px;
+
+            .point {
+                color: #FBE4D8;
+                font-size: 20px;
+                padding: 15px 0px;
+                text-shadow: 2px;
+                ;
+                font-family: 'Catamaran', sans-serif;
+                letter-spacing: 1.5px;
+                line-height: 1.5;
+                transition: transform 0.3s ease;
+
+                &::before {
+                    font-family: 'Font Awesome 5 Free';
+                    content: '\f005'; // Unicode for the star icon (change it for a different icon)
+                    margin-right: 15px;
+                    color: #9a55f3;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        //   flex-wrap: wrap;
+        padding: 10px;
+
+        .left {
+            display: flex;
+
+            .discreption {
+                text-align: center;
+            }
+
+            .app-discreption {
+                text-align: center;
+                min-width: fit-content;
+            }
+
+            .logo {
+                margin-top: 0px !important;
+
+                img {
+                    height: 100px !important;
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            // max-width: auto;
+            .heading {
+                // text-align: center;
+            }
+
+            .points {
+                padding-left: 20px;
+            }
+        }
+    }
+
+
+    .item {
+        flex: 1 0 100%; // Make each item take full width in a column layout
+    }
+}
