@@ -1,4 +1,4 @@
-.toast {
+.TOASTER___toast {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -12,28 +12,28 @@
     opacity: 0.9;
     transition: opacity 0.3s ease;
   
-    &.success {
+    &.TOASTER___success {
       background-color: #4caf50;
       color: #fff;
     }
   
-    &.warning {
+    &.TOASTER___warning {
       background-color: #ff9800;
       color: #fff;
     }
   
-    &.danger {
+    &.TOASTER___danger {
       background-color: #f44336;
       color: #fff;
     }
   
-    .close-icon {
+    .TOASTER___close-icon {
       color: #fff;
       cursor: pointer;
       font-size: 18px;
     }
   
-    .message {
+    .TOASTER___message {
       flex: 1;
       margin-right: 10px;
     }

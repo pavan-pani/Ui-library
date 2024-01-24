@@ -27,8 +27,8 @@ const Toast: React.FC<ToastProps> = ({ type, message }) => {
 
   return (
     isVisible && (
-      <div className={`toast ${type}`}>
-        <span className="message">{message}</span>
+      <div className={`TOASTER___toast TOASTER___${type}`}>
+        <span className="TOASTER___message">{message}</span>
         {/* <FontAwesomeIcon icon={faTimes} className="close-icon" onClick={handleClose} /> */}
       </div>
     )

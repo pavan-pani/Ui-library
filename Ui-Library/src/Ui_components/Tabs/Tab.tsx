@@ -23,19 +23,19 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
     };
 
     return (
-        <div className="tabs-container">
-            <div className="tabs">
+        <div className="TABS___tabs-container">
+            <div className="TABS___tabs">
                 {tabs.map((tab, index) => (
                     <div
                         key={index}
                         onClick={() => handleTabClick(index)}
-                        className={`tab ${activeTab === index ? 'active' : ''} ${tab.disabled ? 'disabled' : ''}`}
+                        className={`TABS___tab ${activeTab === index ? 'TABS___active' : ''} ${tab.disabled ? 'TABS___disabled' : ''}`}
                     >
                         {tab.label}
                     </div>
                 ))}
             </div>
-            <div className="tab-content">{tabs[activeTab].content}</div>
+            <div className="TABS___tab-content">{tabs[activeTab].content}</div>
         </div>
     );
 };

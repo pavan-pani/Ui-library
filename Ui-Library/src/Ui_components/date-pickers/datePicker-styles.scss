@@ -1,4 +1,4 @@
-input {
+.DATEPICKER___input {
     width:250px;
     padding: 12px 20px;
     margin: 8px 0;
@@ -13,15 +13,15 @@ input {
     }
   }
 
-.required{
+.DATEPICKER___required{
     color: red;
     position: absolute;
 }
-.lable{
+.DATEPICKER___lable{
     width:250px;
     text-align: start;
 }
-.input-box{
+.DATEPICKER___input-box{
     display: flex;
     flex-direction: column;
     align-items: baseline;

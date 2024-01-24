@@ -1,15 +1,15 @@
 // Accordion.scss
 
-.accordion {
+.ACCORDION___accordion {
   width: 100%;
 }
 
-.accordion-section {
+.ACCORDION___accordion-section {
   border: 1px solid #000;
   margin-bottom: 8px;
 }
 
-.accordion-header {
+.ACCORDION___accordion-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,16 +22,16 @@
     background-color: #c4c4c457;
   }
 
-  &.active {
+  &.ACCORDION___active {
     background-color: #000; // Change to your active background color
     color: #fff;
   }
 
-  .arrow {
+  .ACCORDION___arrow {
     font-size: 14px;
   }
 }
 
-.accordion-content {
+.ACCORDION___accordion-content {
   padding: 12px;
 }

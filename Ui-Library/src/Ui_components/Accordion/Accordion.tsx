@@ -22,18 +22,18 @@ const Accordion: FC<AccordionProps> = ({ sections }) => {
   };
 
   return (
-    <div className="accordion">
+    <div className="ACCORDION___accordion">
       {sections.map((section, index) => (
-        <div key={index} className="accordion-section">
+        <div key={index} className="ACCORDION___accordion-section">
           <div
-            className={`accordion-header ${activeIndex === index ? 'active' : ''}`}
+            className={`ACCORDION___accordion-header ${activeIndex === index ? 'ACCORDION___active' : ''}`}
             onClick={() => toggleSection(index)}
           >
             {section.title}
-            <span className="arrow">{activeIndex === index ? <SlArrowDown /> : <SlArrowUp />}</span>
+            <span className="ACCORDION___arrow">{activeIndex === index ? <SlArrowDown /> : <SlArrowUp />}</span>
           </div>
           {activeIndex === index && (
-            <div className="accordion-content">{section.content}</div>
+            <div className="ACCORDION___accordion-content">{section.content}</div>
           )}
         </div>
       ))}
