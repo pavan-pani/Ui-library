@@ -3,16 +3,19 @@
     justify-content: center;
     flex-direction: column;
     padding: 20px 100px;
-    background-color: #fff;
+    background-color: #ffffeceb;
+    margin-top: 100px;
+    // width: 100%;
     .btn-item {
         display: flex;
         gap: 40px;
         padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b;
+        border-bottom: 2px solid #1b1b1b2b;
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
+            font-size: 35px;
         }
         .btn-components {
             display: flex;
@@ -21,10 +24,12 @@
             .large-buttons {
                 display: flex;
                 gap: 40px;
+                flex-wrap: wrap;
             }
             .medium-buttons {
                 display: flex;
                 gap: 40px;
+                flex-wrap: wrap;
             }
         }
     }
@@ -32,11 +37,12 @@
         display: flex;
         gap: 40px;
         padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b;
+        border-bottom: 2px solid #1b1b1b2b;
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
+            font-size: 35px;
         }
         .input-components{
             display: flex;
@@ -45,6 +51,7 @@
             .input-boxs{
                 display: flex;
                 gap: 40px;
+                flex-wrap: wrap;
             }
         }
     }
@@ -52,11 +59,12 @@
         display: flex;
         gap: 40px;
         padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b;
+        border-bottom: 2px solid #1b1b1b2b;
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
+            font-size: 35px;
         }
         .CheckBox-components{
             display: flex;
@@ -72,11 +80,12 @@
         display: flex;
         gap: 40px;
         padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b;
+        border-bottom: 2px solid #1b1b1b2b;
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
+            font-size: 35px;
         }
         .radio-components{
             display: flex;
@@ -85,6 +94,7 @@
             .radio-Box{
                 display: flex;
                 gap: 40px;
+                flex-wrap: wrap;
             }
         }
     }
@@ -92,11 +102,12 @@
         display: flex;
         gap: 40px;
         padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b;
+        border-bottom: 2px solid #1b1b1b2b;
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
+            font-size: 35px;
         }
         .textarea-components{
             display: flex;
@@ -105,6 +116,7 @@
             .textarea-Box{
                 display: flex;
                 gap: 40px;
+                flex-wrap: wrap;
             }
         }
     }
@@ -112,11 +124,12 @@
         display: flex;
         gap: 40px;
         padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b;
+        border-bottom: 2px solid #1b1b1b2b;
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
+            font-size: 35px;
         }
         .date-components{
             display: flex;
@@ -125,6 +138,7 @@
             .date-Box{
                 display: flex;
                 gap: 40px;
+                flex-wrap: wrap;
             }
         }
     }
@@ -132,11 +146,12 @@
         display: flex;
         gap: 40px;
         padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b;
+        border-bottom: 2px solid #1b1b1b2b;
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
+            font-size: 35px;
         }
         .dropDown-components{
             display: flex;
@@ -145,6 +160,7 @@
             .dropDown-Box{
                 display: flex;
                 gap: 40px;
+                flex-wrap: wrap;
             }
         }
     }
@@ -152,11 +168,12 @@
         display: flex;
         gap: 40px;
         padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b;
+        border-bottom: 2px solid #1b1b1b2b;
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
+            font-size: 35px;
         }
         .toggle-components{
             display: flex;
@@ -172,11 +189,12 @@
         display: flex;
         gap: 40px;
         padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b;
+        border-bottom: 2px solid #1b1b1b2b;
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
+            font-size: 35px;
         }
         .Accordions-components{
             display: flex;
@@ -185,6 +203,8 @@
             .Accordions-Box{
                 display: flex;
                 gap: 40px;
+                max-width: 800px;
+                min-width: 200px;
             }
         }
     }
@@ -192,11 +212,12 @@
         display: flex;
         gap: 40px;
         padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b;
+        border-bottom: 2px solid #1b1b1b2b;
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
+            font-size: 35px;
         }
         .tabs-components{
             display: flex;
@@ -205,8 +226,104 @@
             .tabs-Box{
                 display: flex;
                 gap: 40px;
+                flex-wrap: wrap;
             }
         }
     }
+}
 
+@media (max-width: 768px) {
+    .doc-container{
+        padding: 5px 20px !important;
+        margin-top: 56px;
+        .btn-item {
+            flex-direction: column;
+            padding: 15px 15px !important;
+            .doc-text {
+                margin-left: 0px !important ;
+                font-size: 25px !important;
+            }
+        }
+        .input-item{
+            flex-direction: column;
+            padding: 15px 15px !important;
+            .doc-text {
+                margin-left: 0px !important ;
+                font-size: 25px !important;
+            }
+        }
+        .textarea-item{
+            flex-direction: column;
+            padding: 15px 15px !important;
+            .doc-text {
+                margin-left: 0px !important ;
+                font-size: 25px !important;
+            }
+            .TEXTAREA___textarea{
+                width: 300px !important;
+            }
+        }
+        .CheckBox-item{
+            flex-direction: column;
+            padding: 15px 15px !important;
+            .doc-text {
+                margin-left: 0px !important ;
+                font-size: 25px !important;
+            }
+        }
+        .radio-item{
+            flex-direction: column;
+            padding: 15px 15px !important;
+            .doc-text {
+                margin-left: 0px !important ;
+                font-size: 25px !important;
+            }
+        }
+        .date-item{
+            flex-direction: column;
+            padding: 15px 15px !important;
+            .doc-text {
+                margin-left: 0px !important ;
+                font-size: 25px !important;
+            }
+        }
+        .dropDown-item{
+            flex-direction: column;
+            padding: 15px 15px !important;
+            .doc-text {
+                margin-left: 0px !important ;
+                font-size: 25px !important;
+            }
+        }
+        .toggle-item{
+            flex-direction: column;
+            padding: 15px 15px !important;
+            .doc-text {
+                margin-left: 0px !important ;
+                font-size: 25px !important;
+            }
+        }
+        .Accordions-item{
+            flex-direction: column;
+            padding: 15px 15px !important;
+            .doc-text {
+                margin-left: 0px !important ;
+                font-size: 25px !important;
+            }
+        }
+        .tabs-item{
+            flex-direction: column;
+            padding: 15px 15px !important;
+            .doc-text {
+                margin-left: 0px !important ;
+                font-size: 25px !important;
+            }
+        }
+       
+    }
+}
+
+.doc-text {
+    font-weight: 600;
+    font-size: 33px !important;
 }

@@ -37,41 +37,28 @@ const Docs = () => {
     size: "large",
     onClick: handleClick,
   }
-  const buttonJson4large: ButtonProps = {
-    text: "Text",
-    variants: "text",
+  const buttonJson1medium: ButtonProps = {
+      text: "Primary",
+      variants: "primary",
+      disabled: false,
+      size: "medium",
+      onClick: handleClick,
+  } 
+  const buttonJson2medium: ButtonProps = {
+      text: "Secondary",
+      variants: "secondary",
+      disabled: false,
+      size: "medium",
+      onClick: handleClick,
+  }
+  const buttonJson3medium: ButtonProps = {
+    text: "Outline",
+    variants: "outline",
     disabled: false,
-    size: "large",
+    size: "medium",
     onClick: handleClick,
   }
-  const buttonJson1medium: ButtonProps = {
-    text: "Primary",
-    variants: "primary",
-    disabled: false,
-    size: "medium",
-    onClick: handleClick,
-} 
-const buttonJson2medium: ButtonProps = {
-    text: "Secondary",
-    variants: "secondary",
-    disabled: false,
-    size: "medium",
-    onClick: handleClick,
-}
-const buttonJson3medium: ButtonProps = {
-  text: "Outline",
-  variants: "outline",
-  disabled: false,
-  size: "medium",
-  onClick: handleClick,
-}
-const buttonJson4medium: ButtonProps = {
-  text: "Text",
-  variants: "text",
-  disabled: false,
-  size: "medium",
-  onClick: handleClick,
-}
+
 
 /******************* Input fields *******************/
 const [inputValue, setInputValue] = useState<string>('');
@@ -296,7 +283,12 @@ const inputJson3:InputProps={
   /************************** tabs **********************/
   const tabs = [
     { label: 'Tab 1', content: <div>Content for Tab 1</div> },
-    { label: 'Tab 2', content: <div>Content for Tab 2</div>, disabled: true },
+    { label: 'Disabled Tab', content: <div>Content for Tab 2</div>, disabled: true },
+    { label: 'Tab 3', content: <div>Content for Tab 3</div> },
+  ];
+  const tabs1 = [
+    { label: 'Tab 1', content: <div>Content for Tab 1</div> },
+    { label: 'Tab 2', content: <div>Content for Tab 2</div>, },
     { label: 'Tab 3', content: <div>Content for Tab 3</div> },
   ];
   return (
@@ -308,13 +300,11 @@ const inputJson3:InputProps={
             <Buttons {...buttonJson1large}/>
             <Buttons {...buttonJson2large}/>
             <Buttons {...buttonJson3large}/>
-            <Buttons {...buttonJson4large}/>
           </div>
           <div className='medium-buttons'>
             <Buttons {...buttonJson1medium}/>
             <Buttons {...buttonJson2medium}/>
             <Buttons {...buttonJson3medium}/>
-            <Buttons {...buttonJson4medium}/>
           </div>
         </div>
       </div>
@@ -395,6 +385,7 @@ const inputJson3:InputProps={
         <div className='doc-text'>Tabs</div>
         <div className='tabs-components'>
           <div className='tabs-Box'>
+            <Tabs tabs={tabs1} />
             <Tabs tabs={tabs} />
           </div>
         </div>
