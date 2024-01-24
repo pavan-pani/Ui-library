@@ -18,15 +18,15 @@ const Checkbox: React.FC<CheckboxProps> = ({ ...props }) => {
     return (
         <div>
             {props.disabled ?
-                <label className="container disabled">{props.label}
+                <label className="CHECKBOX___container CHECKBOX___disabled">{props.label}
                     <input type="checkbox" checked={props.checked} onChange={handleCheckboxChange} disabled />
-                    <span className="checkmark disabled"></span>
+                    <span className="CHECKBOX___checkmark CHECKBOX___disabled"></span>
                 </label>
 
                 :
-                <label className="container">{props.label}
+                <label className="CHECKBOX___container">{props.label}
                     <input type="checkbox" checked={props.checked} onChange={handleCheckboxChange} />
-                    <span className="checkmark"></span>
+                    <span className="CHECKBOX___checkmark"></span>
                 </label>
                 }
         </div>

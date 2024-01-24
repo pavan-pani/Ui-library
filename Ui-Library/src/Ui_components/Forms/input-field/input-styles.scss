@@ -1,4 +1,4 @@
-input {
+.INPUT____INPUT_field {
     width:250px;
     padding: 12px 20px;
     margin: 8px 0;
@@ -13,15 +13,15 @@ input {
     }
   }
 
-.required{
+.INPUT____required{
     color: red;
     position: absolute;
 }
-.lable{
+.INPUT____lable{
     width:250px;
     text-align: start;
 }
-.input-box{
+.INPUT____input-box{
     display: flex;
     flex-direction: column;
     align-items: baseline;

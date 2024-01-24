@@ -21,37 +21,39 @@ const Textarea: React.FC<TextareaProps> = ({ ...props }) => {
     return (
         <div>
             {props.disabled ?
-                <div className='container'>
-                    {props.label && <label>{props.label}</label>}
+                <div className='TEXTAREA___container'>
+                    {props.label && <label className='TEXTAREA___label'>{props.label}</label>}
                     <textarea
-                    className='disabled'
+                    className='TEXTAREA___textarea disabled'
                         value={props.value}
                         onChange={handleInputChange}
                         maxLength={1000}
                         placeholder={props.placeholder} disabled
                     />
-                    <div className='text'>Maximum Characters is 1000</div>
+                    <div className='TEXTAREA___text'>Maximum Characters is 1000</div>
                 </div>
                 : props.required ?
-                    <div className='container'>
-                        {props.label && <label>{props.label}<span>*</span></label>}
+                    <div className='TEXTAREA___container'>
+                        {props.label && <label className='TEXTAREA___label'>{props.label}<span className='TEXTAREA___span'>*</span></label>}
                         <textarea
+                            className='TEXTAREA___textarea'
                             value={props.value}
                             onChange={handleInputChange}
                             maxLength={1000}
                             placeholder={props.placeholder} required
                         />
-                        <div className='text'>Maximum Characters is 1000</div>
+                        <div className='TEXTAREA___text'>Maximum Characters is 1000</div>
                     </div>
-                    : <div className='container'>
-                        {props.label && <label>{props.label}</label>}
+                    : <div className='TEXTAREA___container'>
+                        {props.label && <label className='TEXTAREA___label'>{props.label}</label>}
                         <textarea
+                            className='TEXTAREA___textarea'
                             value={props.value}
                             onChange={handleInputChange}
                             maxLength={1000}
                             placeholder={props.placeholder}
                         />
-                        <div className='text'>Maximum Characters is 1000</div>
+                        <div className='TEXTAREA___text'>Maximum Characters is 1000</div>
                     </div>}
         </div>
 

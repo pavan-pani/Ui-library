@@ -17,10 +17,10 @@ export type InputProps ={
 
 //react Input
 const Input: FC<InputProps> = ({ ...props }) => {
-    const inputClass = `${props.type}`
+    const inputClass = `INPUT____INPUT_field`
     return (
-        <div className='input-box'>
-            {props.label &&  <label className='lable'>{props.label} {props.required&&<span className='required'>*</span>}</label>}
+        <div className='INPUT____input-box'>
+            {props.label &&  <label className='INPUT____lable'>{props.label} {props.required&&<span className='INPUT____required'>*</span>}</label>}
             {props.disabled ? 
                 <input
                     className={inputClass}
