@@ -14,14 +14,14 @@
 .navbar {
     padding: 1rem;
     background: transparent;
-    background-color:#0c0c0ceb;
+    background-color: #0c0c0ceb;
     color: white;
-    // width: 100%;
     position: fixed;
     box-shadow: 0 0 10px #6e02fc93;
     width: 100%;
     top: 0px;
     z-index: 9999;
+
     .header {
         display: flex;
         justify-content: space-between;
@@ -53,24 +53,25 @@
         //   width: 100%;
         text-align: right;
         padding: 1rem;
+        padding-right: 3rem;
 
         .NavItem {
             display: flex;
-            padding: 0.5rem 1rem;
+            padding: 5px 0;
             color: white;
+            margin-left: 40px;
             text-decoration: none;
             // border-bottom: 2px solid #333;
-            // transition: background-color 0.3s;
+            transition: all 0.3s;
 
             &:hover {
-                background-color: #0c0c0cc5;
-                border-radius: 5px;
-                // border-bottom: 2px solid #fff;
+                transform: scale(1.1);
             }
+        }
 
-            &:active {
-                // border-bottom: 2px solid #fff !important;
-            }
+        .active-link {
+            border-bottom: 2px solid #fff !important;
+            font-weight: 600;
         }
     }
 
@@ -121,7 +122,7 @@
             background: rgba(40, 39, 39, 0.954);
             top: 55px;
             width: 100%;
-
+            padding-right: 35px;
             a {
                 padding: 1rem 0rem;
                 justify-content: center;

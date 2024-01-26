@@ -6,8 +6,8 @@
 
     .dev-image {
         .dev {
-            height: 600px;
-            margin-left: -60px;
+            height: 700px;
+            margin-left: -120px;
         }
     }
 
@@ -15,11 +15,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 20px;
+        gap: 30px;
 
         .icon-card {
             padding: 20px 40px;
-            border: 1px solid #000;
+            border: 1px solid #0000002e;
             border-radius: 10px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             transition: box-shadow 0.3s ease;
