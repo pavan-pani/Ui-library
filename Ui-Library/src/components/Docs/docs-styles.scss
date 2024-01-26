@@ -5,27 +5,32 @@
     padding: 20px 100px;
     background-color: #f3edfc;
     margin-top: 100px;
+
     // width: 100%;
     .btn-item {
         display: flex;
         gap: 40px;
         padding: 30px 0px;
         border-bottom: 2px solid #1b1b1b2b;
+
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
             font-size: 35px;
         }
+
         .btn-components {
             display: flex;
             flex-direction: column;
             gap: 25px;
+
             .large-buttons {
                 display: flex;
                 gap: 40px;
                 flex-wrap: wrap;
             }
+
             .medium-buttons {
                 display: flex;
                 gap: 40px;
@@ -33,174 +38,206 @@
             }
         }
     }
-    .input-item{
+
+    .input-item {
         display: flex;
         gap: 40px;
         padding: 30px 0px;
         border-bottom: 2px solid #1b1b1b2b;
+
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
             font-size: 35px;
         }
-        .input-components{
+
+        .input-components {
             display: flex;
             flex-direction: column;
             gap: 25px;
-            .input-boxs{
+
+            .input-boxs {
                 display: flex;
                 gap: 40px;
                 flex-wrap: wrap;
             }
         }
     }
-    .CheckBox-item{
+
+    .CheckBox-item {
         display: flex;
         gap: 40px;
         padding: 30px 0px;
         border-bottom: 2px solid #1b1b1b2b;
+
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
             font-size: 35px;
         }
-        .CheckBox-components{
+
+        .CheckBox-components {
             display: flex;
             flex-direction: column;
             gap: 25px;
-            .Check-Box{
+
+            .Check-Box {
                 display: flex;
                 gap: 40px;
             }
         }
     }
-    .radio-item{
+
+    .radio-item {
         display: flex;
         gap: 40px;
         padding: 30px 0px;
         border-bottom: 2px solid #1b1b1b2b;
+
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
             font-size: 35px;
         }
-        .radio-components{
+
+        .radio-components {
             display: flex;
             flex-direction: column;
             gap: 25px;
-            .radio-Box{
-                display: flex;
-                gap: 40px;
-                flex-wrap: wrap;
-            }
-        }
-    }
-    .textarea-item{
-        display: flex;
-        gap: 40px;
-        padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b2b;
-        .doc-text {
-            color: #010101;
-            width: 400px;
-            margin-left: 50px;
-            font-size: 35px;
-        }
-        .textarea-components{
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            .textarea-Box{
+
+            .radio-Box {
                 display: flex;
                 gap: 40px;
                 flex-wrap: wrap;
             }
         }
     }
-    .date-item{
+
+    .textarea-item {
         display: flex;
         gap: 40px;
         padding: 30px 0px;
         border-bottom: 2px solid #1b1b1b2b;
+
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
             font-size: 35px;
         }
-        .date-components{
+
+        .textarea-components {
             display: flex;
             flex-direction: column;
             gap: 25px;
-            .date-Box{
+
+            .textarea-Box {
                 display: flex;
                 gap: 40px;
                 flex-wrap: wrap;
             }
         }
     }
-    .dropDown-item{
+
+    .date-item {
         display: flex;
         gap: 40px;
         padding: 30px 0px;
         border-bottom: 2px solid #1b1b1b2b;
+
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
             font-size: 35px;
         }
-        .dropDown-components{
+
+        .date-components {
             display: flex;
             flex-direction: column;
             gap: 25px;
-            .dropDown-Box{
+
+            .date-Box {
                 display: flex;
                 gap: 40px;
                 flex-wrap: wrap;
             }
         }
     }
-    .toggle-item{
+
+    .dropDown-item {
         display: flex;
         gap: 40px;
         padding: 30px 0px;
         border-bottom: 2px solid #1b1b1b2b;
+
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
             font-size: 35px;
         }
-        .toggle-components{
+
+        .dropDown-components {
             display: flex;
             flex-direction: column;
             gap: 25px;
-            .toggle-Box{
+
+            .dropDown-Box {
+                display: flex;
+                gap: 40px;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .toggle-item {
+        display: flex;
+        gap: 40px;
+        padding: 30px 0px;
+        border-bottom: 2px solid #1b1b1b2b;
+
+        .doc-text {
+            color: #010101;
+            width: 400px;
+            margin-left: 50px;
+            font-size: 35px;
+        }
+
+        .toggle-components {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            .toggle-Box {
                 display: flex;
                 gap: 40px;
             }
         }
     }
-    .Accordions-item{
+
+    .Accordions-item {
         display: flex;
         gap: 40px;
         padding: 30px 0px;
         border-bottom: 2px solid #1b1b1b2b;
+
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
             font-size: 35px;
         }
-        .Accordions-components{
+
+        .Accordions-components {
             display: flex;
             flex-direction: column;
             gap: 25px;
-            .Accordions-Box{
+
+            .Accordions-Box {
                 display: flex;
                 gap: 40px;
                 max-width: 800px;
@@ -208,29 +245,34 @@
             }
         }
     }
-    .tabs-item{
+
+    .tabs-item {
         display: flex;
         gap: 40px;
         padding: 30px 0px;
         border-bottom: 2px solid #1b1b1b2b;
+
         .doc-text {
             color: #010101;
             width: 400px;
             margin-left: 50px;
             font-size: 35px;
         }
-        .tabs-components{
+
+        .tabs-components {
             display: flex;
             flex-direction: column;
             gap: 25px;
-            .tabs-Box{
+
+            .tabs-Box {
                 display: flex;
                 gap: 40px;
                 flex-wrap: wrap;
             }
         }
     }
-    .doc-text{
+
+    .doc-text {
         color: #6902f0 !important;
         font-family: 'Catamaran', sans-serif;
         letter-spacing: 1px;
@@ -238,27 +280,28 @@
 }
 
 @media (max-width: 768px) {
-    .doc-container{
+    .doc-container {
         padding: 5px 20px !important;
         margin-top: 56px;
         width: fit-content;
 
         .btn-item,
-        .input-item, 
-        .CheckBox-item,  
+        .input-item,
+        .CheckBox-item,
         .radio-item,
         .date-item,
         .dropDown-item,
         .toggle-item,
         .Accordions-item,
-        .tabs-item
-        {
+        .tabs-item {
             flex-direction: column;
             padding: 15px 15px !important;
+
             .doc-text {
-                margin-left: 0px !important ;
+                margin-left: 0px !important;
                 font-size: 25px !important;
             }
+
             .btn-components,
             .input-components,
             .CheckBox-components,
@@ -266,38 +309,46 @@
             .tabs-components,
             .tabs-components,
             .dropDown-components,
-            .toggle-components{
+            .toggle-components {
                 justify-content: center;
                 align-items: center;
-                .input-boxs{
+
+                .input-boxs {
                     justify-content: center;
-                } 
-                .textarea-Box{
+                }
+
+                .textarea-Box {
                     justify-content: center;
-                } 
-                .date-Box{
+                }
+
+                .date-Box {
                     justify-content: center !important;
                 }
             }
-    
+
         }
-        .textarea-item{
+
+        .textarea-item {
             flex-direction: column;
             padding: 15px 15px !important;
+
             .doc-text {
-                margin-left: 0px !important ;
+                margin-left: 0px !important;
                 font-size: 25px !important;
             }
-            .TEXTAREA___textarea{
+
+            .TEXTAREA___textarea {
                 width: 300px !important;
             }
         }
-       
+
     }
-    .doc-container .textarea-item .textarea-components .textarea-Box{
+
+    .doc-container .textarea-item .textarea-components .textarea-Box {
         justify-content: center;
     }
-    .doc-container .date-item .date-components .date-Box{
+
+    .doc-container .date-item .date-components .date-Box {
         justify-content: center;
     }
 }

@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
 import { BrowserRouter } from "react-router-dom";
 import './index.scss'
-import Navbar from './components/NavBar/NavBar.tsx';
+const App = lazy(() => import('./App.tsx'))
+const Navbar = lazy(() => import('./components/NavBar/NavBar.tsx'))
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Navbar />
-      <App />
+      <Suspense fallback={<h3>Loading...!</h3>}>
+        <Navbar />
+        <App />
+      </Suspense>
     </BrowserRouter>
   </React.StrictMode>,
 )

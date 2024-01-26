@@ -1,24 +1,28 @@
-.howToUse{
+.howToUse {
     background-color: #fff;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .useimage{
+
+    .useimage {
         justify-content: center;
         display: flex;
         align-items: center;
+
         .img {
-            width: 700px ;
+            width: 700px;
         }
     }
-    .info-text{
+
+    .info-text {
         font-size: 30px;
         padding: 25px;
         text-align: center;
         transition: transform 0.3s ease;
         font-family: 'Catamaran', sans-serif;
+
         &:hover {
             transform: scale(1.03);
         }
@@ -26,23 +30,26 @@
 }
 
 @media screen and (max-width: 768px) {
-    .howToUse{
+    .howToUse {
         margin-top: 56px;
     }
-    .info-text{
+
+    .info-text {
         font-size: 25px !important;
     }
+
     .img {
         width: 500px !important;
     }
 }
+
 @media screen and (max-width: 500px) {
-    
+
     .img {
         width: 400px !important;
     }
 }
 
-body{
+body {
     background-color: #fff !important;
 }

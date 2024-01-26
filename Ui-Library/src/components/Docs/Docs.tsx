@@ -15,20 +15,20 @@ import Tabs from '../../Ui_components/Tabs/Tab'
 const Docs = () => {
 
   /******************** Buttons *************************/
-  const handleClick = () => {}
+  const handleClick = () => { }
   const buttonJson1large: ButtonProps = {
-      text: "Primary",
-      variants: "primary",
-      disabled: false,
-      size: "large",
-      onClick: handleClick,
-  } 
+    text: "Primary",
+    variants: "primary",
+    disabled: false,
+    size: "large",
+    onClick: handleClick,
+  }
   const buttonJson2large: ButtonProps = {
-      text: "Secondary",
-      variants: "secondary",
-      disabled: false,
-      size: "large",
-      onClick: handleClick,
+    text: "Secondary",
+    variants: "secondary",
+    disabled: false,
+    size: "large",
+    onClick: handleClick,
   }
   const buttonJson3large: ButtonProps = {
     text: "Outline",
@@ -38,18 +38,18 @@ const Docs = () => {
     onClick: handleClick,
   }
   const buttonJson1medium: ButtonProps = {
-      text: "Primary",
-      variants: "primary",
-      disabled: false,
-      size: "medium",
-      onClick: handleClick,
-  } 
+    text: "Primary",
+    variants: "primary",
+    disabled: false,
+    size: "medium",
+    onClick: handleClick,
+  }
   const buttonJson2medium: ButtonProps = {
-      text: "Secondary",
-      variants: "secondary",
-      disabled: false,
-      size: "medium",
-      onClick: handleClick,
+    text: "Secondary",
+    variants: "secondary",
+    disabled: false,
+    size: "medium",
+    onClick: handleClick,
   }
   const buttonJson3medium: ButtonProps = {
     text: "Outline",
@@ -60,54 +60,54 @@ const Docs = () => {
   }
 
 
-/******************* Input fields *******************/
-const [inputValue, setInputValue] = useState<string>('');
-const [inputValue1, setInputValue1] = useState<string>('');
-const [inputValue2, setInputValue2] = useState<string>('');
-const handlechange = (value:any) => {
-  setInputValue(() => {
-    return value;
-  });
-};
-const handlechange1 = (value:any) => {
-  setInputValue1(() => {
-    return value;
-  });
-};
-const handlechange2 = (value:any) => {
-  setInputValue2(() => {
-    return value;
-  });
-};
-const inputJson1:InputProps={
-  type: 'text',
-  label: "Required input",
-  value: inputValue,
-  disabled: false,
-  onChange: handlechange,
-  required: true,
-  placeholder: 'Enter your input'
-}
-const inputJson2:InputProps={
-  type: 'text',
-  label: "Disabled input",
-  value: inputValue1,
-  disabled: true,
-  onChange: handlechange1,
-  required: false,
-  placeholder: 'Enter your input'
-}
-const inputJson3:InputProps={
-  type: 'text',
-  label: "Normal input",
-  value: inputValue2,
-  disabled: false,
-  onChange: handlechange2,
-  required: false,
-  placeholder: 'Enter your input'
-}
+  /******************* Input fields *******************/
+  const [inputValue, setInputValue] = useState<string>('');
+  const [inputValue1, setInputValue1] = useState<string>('');
+  const [inputValue2, setInputValue2] = useState<string>('');
+  const handlechange = (value: any) => {
+    setInputValue(() => {
+      return value;
+    });
+  };
+  const handlechange1 = (value: any) => {
+    setInputValue1(() => {
+      return value;
+    });
+  };
+  const handlechange2 = (value: any) => {
+    setInputValue2(() => {
+      return value;
+    });
+  };
+  const inputJson1: InputProps = {
+    type: 'text',
+    label: "Required input",
+    value: inputValue,
+    disabled: false,
+    onChange: handlechange,
+    required: true,
+    placeholder: 'Enter your input'
+  }
+  const inputJson2: InputProps = {
+    type: 'text',
+    label: "Disabled input",
+    value: inputValue1,
+    disabled: true,
+    onChange: handlechange1,
+    required: false,
+    placeholder: 'Enter your input'
+  }
+  const inputJson3: InputProps = {
+    type: 'text',
+    label: "Normal input",
+    value: inputValue2,
+    disabled: false,
+    onChange: handlechange2,
+    required: false,
+    placeholder: 'Enter your input'
+  }
 
-/******************* Check-boxs **************************/
+  /******************* Check-boxs **************************/
   const [isChecked, setIsChecked] = useState(false);
   const [isChecked1, setIsChecked1] = useState(false);
 
@@ -115,21 +115,21 @@ const inputJson3:InputProps={
     setIsChecked(() => {
       return newState; // Set the new value
     });
-    
+
   };
   const handleCheckboxChange1 = (newState: boolean) => {
     setIsChecked1(() => {
       return newState; // Set the new value
     });
-    
+
   };
-  const checkboxJson:CheckboxProps={
+  const checkboxJson: CheckboxProps = {
     checked: isChecked,
     label: "Normal",
     disabled: false,
     onChange: handleCheckboxChange,
   }
-  const checkboxJson1:CheckboxProps={
+  const checkboxJson1: CheckboxProps = {
     checked: isChecked1,
     label: "Disabled",
     disabled: true,
@@ -158,7 +158,7 @@ const inputJson3:InputProps={
     label: "option 3",
     value: "option3",
     onChange: handleRadioChange,
-    disabled:true,
+    disabled: true,
     name: "radioGroup"// Set the same name for each RadioButton in the group
   }
 
@@ -169,41 +169,41 @@ const inputJson3:InputProps={
   const [textinputValue2, setTextInputValue2] = useState<string>('');
 
   const handleTextareaChange = (value: string) => {
-    setTextInputValue(()=>{
+    setTextInputValue(() => {
       return value
     });
   };
   const handleTextareaChange1 = (value: string) => {
-    setTextInputValue1(()=>{
+    setTextInputValue1(() => {
       return value
     });
   };
   const handleTextareaChange2 = (value: string) => {
-    setTextInputValue2(()=>{
+    setTextInputValue2(() => {
       return value
     });
   };
-  const TextinputJson:TextareaProps={
+  const TextinputJson: TextareaProps = {
     value: textinputValue,
     onChange: handleTextareaChange,
-    label:"Required Text area",
-    placeholder:"Enter Yout text here",
+    label: "Required Text area",
+    placeholder: "Enter Yout text here",
     disabled: false,
     required: true,
   }
-  const TextinputJson1:TextareaProps={
+  const TextinputJson1: TextareaProps = {
     value: textinputValue1,
     onChange: handleTextareaChange1,
-    label:"disabled Text area",
-    placeholder:"Enter Yout text here",
+    label: "disabled Text area",
+    placeholder: "Enter Yout text here",
     disabled: true,
     required: false,
   }
-  const TextinputJson2:TextareaProps={
+  const TextinputJson2: TextareaProps = {
     value: textinputValue2,
     onChange: handleTextareaChange2,
-    label:"Normal Text area",
-    placeholder:"Enter Yout text here",
+    label: "Normal Text area",
+    placeholder: "Enter Yout text here",
     disabled: false,
     required: false,
   }
@@ -211,17 +211,17 @@ const inputJson3:InputProps={
   /************************** date picker **********************/
   const [dateinputValue, setdateInputValue] = useState<string>('');
   const [dateinputValue1, setdateInputValue1] = useState<string>('');
-  const handledatechange = (value:any) => {
+  const handledatechange = (value: any) => {
     setdateInputValue(() => {
       return value; // Set the new value
     });
   };
-  const handledatechange1 = (value:any) => {
+  const handledatechange1 = (value: any) => {
     setdateInputValue1(() => {
       return value; // Set the new value
     });
   };
-  const dateJson:DatePickerProps={
+  const dateJson: DatePickerProps = {
     type: 'date',
     label: "Start Date",
     value: dateinputValue,
@@ -229,7 +229,7 @@ const inputJson3:InputProps={
     onChange: handledatechange,
     required: false,
   }
-  const dateJson1:DatePickerProps={
+  const dateJson1: DatePickerProps = {
     type: 'date',
     label: "End Date",
     value: dateinputValue1,
@@ -243,7 +243,7 @@ const inputJson3:InputProps={
   const handleToggleChange = (checked: boolean) => {
     setIsToggled(checked);
   };
-  const toggleJson:ToggleButtonProps={
+  const toggleJson: ToggleButtonProps = {
     offState: "OFF",
     onState: "ON",
     checked: isToggled,
@@ -255,22 +255,22 @@ const inputJson3:InputProps={
     console.log(`Selected: ${selectedOption}`);
     // Perform any other actions based on the selected option
   };
-  const dropDownson:DropdownProps={
-    options : ['Option 1', 'Option 2', 'Option 3','Option 4', 'Option 5', 'Option 6'],
-    default:"Select an option",
-    labal:"Drop Down",
-    onSelect:handleSelect,
-    disabled:false
+  const dropDownson: DropdownProps = {
+    options: ['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5', 'Option 6'],
+    default: "Select an option",
+    labal: "Drop Down",
+    onSelect: handleSelect,
+    disabled: false
   }
   const handleMultiSelect = (selectedOptions: string[]) => {
     console.log('Selected options:', selectedOptions);
     // Perform any other actions based on the selected options
   };
-  const multiSelectJson:MultiSelectDropdownProps={
-    options:['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5'],
-    disabled:false,
-    label:"Select options",
-    onSelect:handleMultiSelect
+  const multiSelectJson: MultiSelectDropdownProps = {
+    options: ['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5'],
+    disabled: false,
+    label: "Select options",
+    onSelect: handleMultiSelect
   }
 
   /************************** Accordions **********************/
@@ -297,14 +297,14 @@ const inputJson3:InputProps={
         <div className='doc-text'>Buttons</div>
         <div className='btn-components'>
           <div className='large-buttons'>
-            <Buttons {...buttonJson1large}/>
-            <Buttons {...buttonJson2large}/>
-            <Buttons {...buttonJson3large}/>
+            <Buttons {...buttonJson1large} />
+            <Buttons {...buttonJson2large} />
+            <Buttons {...buttonJson3large} />
           </div>
           <div className='medium-buttons'>
-            <Buttons {...buttonJson1medium}/>
-            <Buttons {...buttonJson2medium}/>
-            <Buttons {...buttonJson3medium}/>
+            <Buttons {...buttonJson1medium} />
+            <Buttons {...buttonJson2medium} />
+            <Buttons {...buttonJson3medium} />
           </div>
         </div>
       </div>
@@ -312,9 +312,9 @@ const inputJson3:InputProps={
         <div className='doc-text'>Text Inputs</div>
         <div className='input-components'>
           <div className='input-boxs'>
-            <Input {...inputJson1}/>
-            <Input {...inputJson2}/>
-            <Input {...inputJson3}/>
+            <Input {...inputJson1} />
+            <Input {...inputJson2} />
+            <Input {...inputJson3} />
           </div>
         </div>
       </div>
@@ -322,8 +322,8 @@ const inputJson3:InputProps={
         <div className='doc-text'>Check Boxs</div>
         <div className='CheckBox-components'>
           <div className='Check-Box'>
-            <Checkbox {...checkboxJson}/>
-            <Checkbox {...checkboxJson1}/>
+            <Checkbox {...checkboxJson} />
+            <Checkbox {...checkboxJson1} />
           </div>
         </div>
       </div>
@@ -331,9 +331,9 @@ const inputJson3:InputProps={
         <div className='doc-text'>Radio Buttons</div>
         <div className='radio-components'>
           <div className='radio-Box'>
-          <RadioButton {...radioJson} checked={selectedValue === 'option1'}/>
-          <RadioButton {...radioJson2} checked={selectedValue === 'option2'}/>
-          <RadioButton {...radioJson3} checked={selectedValue === 'option3'}/>
+            <RadioButton {...radioJson} checked={selectedValue === 'option1'} />
+            <RadioButton {...radioJson2} checked={selectedValue === 'option2'} />
+            <RadioButton {...radioJson3} checked={selectedValue === 'option3'} />
           </div>
         </div>
       </div>
@@ -341,9 +341,9 @@ const inputJson3:InputProps={
         <div className='doc-text'>Text Area</div>
         <div className='textarea-components'>
           <div className='textarea-Box'>
-            <Textarea {...TextinputJson}/>
-            <Textarea {...TextinputJson1}/>
-            <Textarea {...TextinputJson2}/>
+            <Textarea {...TextinputJson} />
+            <Textarea {...TextinputJson1} />
+            <Textarea {...TextinputJson2} />
           </div>
         </div>
       </div>
@@ -351,8 +351,8 @@ const inputJson3:InputProps={
         <div className='doc-text'>Date Picker</div>
         <div className='date-components'>
           <div className='date-Box'>
-            <DatePicker {...dateJson}/> 
-            <DatePicker {...dateJson1}/>
+            <DatePicker {...dateJson} />
+            <DatePicker {...dateJson1} />
           </div>
         </div>
       </div>
@@ -361,7 +361,7 @@ const inputJson3:InputProps={
         <div className='dropDown-components'>
           <div className='dropDown-Box'>
             <Dropdown {...dropDownson} />
-            <MultiSelectDropdown {...multiSelectJson}/>
+            <MultiSelectDropdown {...multiSelectJson} />
           </div>
         </div>
       </div>
@@ -369,7 +369,7 @@ const inputJson3:InputProps={
         <div className='doc-text'>Toggle</div>
         <div className='toggle-components'>
           <div className='toggle-Box'>
-            <ToggleButton {...toggleJson}/>
+            <ToggleButton {...toggleJson} />
           </div>
         </div>
       </div>
@@ -377,7 +377,7 @@ const inputJson3:InputProps={
         <div className='doc-text'>Accordions</div>
         <div className='Accordions-components'>
           <div className='Accordions-Box'>
-          <Accordion sections={accordionSections} />
+            <Accordion sections={accordionSections} />
           </div>
         </div>
       </div>
