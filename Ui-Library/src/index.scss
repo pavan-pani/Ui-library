@@ -1,12 +1,13 @@
 body{
   background-color: #000000;
+  margin: 0px;
 }
 body::-webkit-scrollbar {
-  width: 3px; /* Set the width of the scrollbar */
+  width: 5px; /* Set the width of the scrollbar */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #ffff01; /* Black-colored scrollbar thumb */
+  background-color: #6f00ff; /* Black-colored scrollbar thumb */
   border-radius: 5px;
 }
 

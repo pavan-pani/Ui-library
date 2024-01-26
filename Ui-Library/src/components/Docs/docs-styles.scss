@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 20px 100px;
-    background-color: #ffffeceb;
+    background-color: #f3edfc;
     margin-top: 100px;
     // width: 100%;
     .btn-item {
@@ -230,27 +230,56 @@
             }
         }
     }
+    .doc-text{
+        color: #6902f0 !important;
+        font-family: 'Catamaran', sans-serif;
+        letter-spacing: 1px;
+    }
 }
 
 @media (max-width: 768px) {
     .doc-container{
         padding: 5px 20px !important;
         margin-top: 56px;
-        .btn-item {
+        width: fit-content;
+
+        .btn-item,
+        .input-item, 
+        .CheckBox-item,  
+        .radio-item,
+        .date-item,
+        .dropDown-item,
+        .toggle-item,
+        .Accordions-item,
+        .tabs-item
+        {
             flex-direction: column;
             padding: 15px 15px !important;
             .doc-text {
                 margin-left: 0px !important ;
                 font-size: 25px !important;
             }
-        }
-        .input-item{
-            flex-direction: column;
-            padding: 15px 15px !important;
-            .doc-text {
-                margin-left: 0px !important ;
-                font-size: 25px !important;
+            .btn-components,
+            .input-components,
+            .CheckBox-components,
+            .radio-components,
+            .tabs-components,
+            .tabs-components,
+            .dropDown-components,
+            .toggle-components{
+                justify-content: center;
+                align-items: center;
+                .input-boxs{
+                    justify-content: center;
+                } 
+                .textarea-Box{
+                    justify-content: center;
+                } 
+                .date-Box{
+                    justify-content: center !important;
+                }
             }
+    
         }
         .textarea-item{
             flex-direction: column;
@@ -263,63 +292,13 @@
                 width: 300px !important;
             }
         }
-        .CheckBox-item{
-            flex-direction: column;
-            padding: 15px 15px !important;
-            .doc-text {
-                margin-left: 0px !important ;
-                font-size: 25px !important;
-            }
-        }
-        .radio-item{
-            flex-direction: column;
-            padding: 15px 15px !important;
-            .doc-text {
-                margin-left: 0px !important ;
-                font-size: 25px !important;
-            }
-        }
-        .date-item{
-            flex-direction: column;
-            padding: 15px 15px !important;
-            .doc-text {
-                margin-left: 0px !important ;
-                font-size: 25px !important;
-            }
-        }
-        .dropDown-item{
-            flex-direction: column;
-            padding: 15px 15px !important;
-            .doc-text {
-                margin-left: 0px !important ;
-                font-size: 25px !important;
-            }
-        }
-        .toggle-item{
-            flex-direction: column;
-            padding: 15px 15px !important;
-            .doc-text {
-                margin-left: 0px !important ;
-                font-size: 25px !important;
-            }
-        }
-        .Accordions-item{
-            flex-direction: column;
-            padding: 15px 15px !important;
-            .doc-text {
-                margin-left: 0px !important ;
-                font-size: 25px !important;
-            }
-        }
-        .tabs-item{
-            flex-direction: column;
-            padding: 15px 15px !important;
-            .doc-text {
-                margin-left: 0px !important ;
-                font-size: 25px !important;
-            }
-        }
        
+    }
+    .doc-container .textarea-item .textarea-components .textarea-Box{
+        justify-content: center;
+    }
+    .doc-container .date-item .date-components .date-Box{
+        justify-content: center;
     }
 }
 

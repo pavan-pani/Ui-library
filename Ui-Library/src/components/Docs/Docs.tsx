@@ -94,7 +94,7 @@ const inputJson2:InputProps={
   value: inputValue1,
   disabled: true,
   onChange: handlechange1,
-  required: true,
+  required: false,
   placeholder: 'Enter your input'
 }
 const inputJson3:InputProps={
