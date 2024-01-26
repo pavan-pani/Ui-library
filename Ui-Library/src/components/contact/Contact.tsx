@@ -12,9 +12,7 @@ import dev3 from "../../Assets/dev3.png"
 const Contact = () => {
   const handleContactButtonClick = () => {
     const email = 'pavanpk1012@gmail.com'; 
-    const subject = ''; 
-    const body = ''; 
-    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:${email}`;
     window.location.href = mailtoLink;
 };
 
