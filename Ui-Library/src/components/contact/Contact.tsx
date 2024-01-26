@@ -11,12 +11,12 @@ import dev3 from "../../Assets/dev3.png"
 
 const Contact = () => {
   const handleContactButtonClick = () => {
-    const email = 'pavanpk1012@gmail.com'; 
+    const email = 'pavanpk1012@gmail.com';
     const mailtoLink = `mailto:${email}`;
     window.location.href = mailtoLink;
-};
+  };
 
-return (
+  return (
     <div className='contact-container'>
       <div className='dev-image'>
         <img className='dev' src={dev3}></img>
@@ -26,18 +26,18 @@ return (
           <img className='email' src={email} onClick={handleContactButtonClick}></img>
         </div>
         <div className='icon-card'>
-          <a href='https://www.linkedin.com/in/g-pavan-kumar-2957181b5/'> 
+          <a href='https://www.linkedin.com/in/g-pavan-kumar-2957181b5/'>
             <img className='linkedin' src={linkedin}></img>
           </a>
         </div>
         <div className='icon-card'>
           <a href='https://github.com/pavan-pani'>
-          <img className='github' src={github}></img>
+            <img className='github' src={github}></img>
           </a>
         </div>
       </div>
     </div>
-);
+  );
 }
 
 export default Contact
