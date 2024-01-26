@@ -14,7 +14,7 @@
 .navbar {
     padding: 1rem;
     background: transparent;
-    background-color:#0c0c0c;
+    background-color:#0c0c0ceb;
     color: white;
     // width: 100%;
     position: fixed;
@@ -63,7 +63,7 @@
             // transition: background-color 0.3s;
 
             &:hover {
-                background-color: #0c0c0c5a;
+                background-color: #0c0c0cc5;
                 border-radius: 5px;
                 // border-bottom: 2px solid #fff;
             }
@@ -119,7 +119,7 @@
             text-align: center;
             position: absolute;
             background: rgba(40, 39, 39, 0.954);
-            top: 60px;
+            top: 55px;
             width: 100%;
 
             a {
