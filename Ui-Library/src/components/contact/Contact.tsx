@@ -1,7 +1,4 @@
-import React from 'react'
 import './contact-styles.scss'
-import dev1 from "../../Assets/dev1.jpg"
-import dev2 from "../../Assets/dev2.jpg"
 import email from "../../Assets/mail.png"
 import github from "../../Assets/github.png"
 import linkedin from "../../Assets/linkedin.png"

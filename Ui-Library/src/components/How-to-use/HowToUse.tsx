@@ -1,5 +1,3 @@
-import React from 'react'
-import howToUse from '../../Assets/howToUse.jpg'
 import './howToUse-syles.scss'
 import filePath from "../../Assets/filePath.png"
 import num1 from '../../Assets/num1.png'

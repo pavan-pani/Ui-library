@@ -1,4 +1,3 @@
-import React from 'react'
 import './home-styles.scss'
 import logo from "../../Assets/logo.png"
 import Buttons, { ButtonProps } from '../../Ui_components/Button/Buttons'

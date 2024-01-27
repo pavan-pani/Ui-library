@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { lazy, useState } from 'react'
 import './docs-styles.scss'
 import Buttons, { ButtonProps } from '../../Ui_components/Button/Buttons'
 import Input, { InputProps } from '../../Ui_components/Forms/input-field/Input'
@@ -9,8 +9,9 @@ import DatePicker, { DatePickerProps } from '../../Ui_components/date-pickers/Da
 import ToggleButton, { ToggleButtonProps } from '../../Ui_components/Toggle/Toggle'
 import Dropdown, { DropdownProps } from '../../Ui_components/Drop-down/Drop-down'
 import MultiSelectDropdown, { MultiSelectDropdownProps } from '../../Ui_components/Mult-Select/MultSelect-Dropdown'
-import Accordion from '../../Ui_components/Accordion/Accordion'
-import Tabs from '../../Ui_components/Tabs/Tab'
+
+const Tabs = lazy(() => import('../../Ui_components/Tabs/Tab'))
+const Accordion = lazy(() => import('../../Ui_components/Accordion/Accordion'))
 
 const Docs = () => {
 
