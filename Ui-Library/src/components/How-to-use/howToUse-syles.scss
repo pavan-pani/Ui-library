@@ -1,48 +1,109 @@
-.howToUse{
+.howToUse {
     background-color: #fff;
-    margin-top: 100px;
+    margin: 130px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .useimage{
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        .img {
-            width: 700px ;
+    .step-main{
+        width: 600px;
+        position: relative;
+        border-left:5px dotted;
+        padding: 0 20px 40px 60px;
+        .step-num{
+            background-color: #fff;
+            position: absolute;
+            border-radius: 100px;
+            left: -35px;
+            top: -00px;
         }
-    }
-    .info-text{
-        font-size: 30px;
-        padding: 25px;
-        text-align: center;
-        transition: transform 0.3s ease;
-        font-family: 'Catamaran', sans-serif;
-        &:hover {
-            transform: scale(1.03);
+        .heading{
+            font-size: 40px;
+            font-weight: 500;
+            font-family: 'Catamaran', sans-serif;
+            letter-spacing: 1px;
         }
+        .subHeading{
+            font-size: 20px;
+
+            font-family: 'Catamaran', sans-serif;
+        }
+        
     }
+    .last-child{
+        padding: 0 20px 0px 60px;
+        border-left: none;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
-    .howToUse{
+    .howToUse {
         margin-top: 56px;
-    }
-    .info-text{
-        font-size: 25px !important;
-    }
-    .img {
-        width: 500px !important;
-    }
-}
-@media screen and (max-width: 500px) {
+        padding: 20px;
+        .step-main{
+            width: 250px;
+            padding: 0 20px 30px 30px;
+            .step-num{
+                width: 30px;
+                background-color: #fff;
+                position: absolute;
+                border-radius: 100px;
+                left: -18px;
+                top: -00px;
+            }
+            .heading{
+                font-size: 20px;
+                font-weight: 500;
+                margin-top: -2px;
+            }
+            .subHeading{
+                font-size: 10px;
     
-    .img {
-        width: 400px !important;
+                font-family: 'Catamaran', sans-serif;
+            }
+            .file-path{
+                width: 150px;
+            }
+            
+        }
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .howToUse {
+        margin-top: 56px;
+        padding: 20px;
+        .step-main{
+            width: 200px;
+            padding: 0 20px 30px 30px;
+            .step-num{
+                width: 30px;
+                background-color: #fff;
+                position: absolute;
+                border-radius: 100px;
+                left: -18px;
+                top: -00px;
+            }
+            .heading{
+                font-size: 20px;
+                font-weight: 500;
+                margin-top: -2px;
+            }
+            .subHeading{
+                font-size: 10px;
+    
+                font-family: 'Catamaran', sans-serif;
+            }
+            .file-path{
+                width: 150px;
+            }
+            
+        }
     }
 }
 
-body{
+body {
     background-color: #fff !important;
 }

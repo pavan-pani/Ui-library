@@ -1,11 +1,15 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
+body{
+    background-color: #f7f5f8 !important;
+}
 .container {
     padding: 50px 100px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 100px;
+
     // gap: 50px;
     .left {
         display: flex;

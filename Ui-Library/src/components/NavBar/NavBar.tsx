@@ -1,16 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, lazy } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import logo from "../../Assets/logo.png"
-// import { NavLink } from 'react-router-dom';
 import './navbar-styles.scss';
-import { NavLink, useLocation, useParams, useRoutes } from 'react-router-dom';
-
+import { useLocation } from 'react-router-dom';
 const Navbar: React.FC = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const {pathname}=useLocation()
+    const { pathname } = useLocation()
     console.log(pathname);
-    
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
