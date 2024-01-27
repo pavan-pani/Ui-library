@@ -4,6 +4,7 @@
     justify-content: center;
     gap: 30px;
     background-color: #ffffff;
+    
     .dev-image {
         .dev {
             height: 700px;
@@ -49,7 +50,7 @@
         justify-content: center;
         gap: 0px;
         padding: 0px 20px;
-
+        padding-bottom: 200px;
         .dev-image {
             display: flex;
             justify-content: center;
@@ -80,4 +81,11 @@
         }
     }
 
+}
+
+@media screen and (max-width: 400px) {
+    .dev {
+        height: 300px !important;
+        margin-left: 0px;
+    }
 }
