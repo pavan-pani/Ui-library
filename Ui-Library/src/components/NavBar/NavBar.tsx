@@ -4,6 +4,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import logo from "../../Assets/logo.png"
 import './navbar-styles.scss';
 import { useLocation } from 'react-router-dom';
+
 const Navbar: React.FC = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const { pathname } = useLocation()
@@ -25,7 +26,7 @@ const Navbar: React.FC = () => {
                 <a className={`NavItem ${pathname === '/' ? 'active-link' : ''}`} href="/">Home</a>
                 <a className={`NavItem ${pathname === '/components' ? 'active-link' : ''}`} href="/components">Components</a>
                 <a className={`NavItem ${pathname === '/how-to-use' ? 'active-link' : ''}`} href="/how-to-use">How to Use</a>
-                <a className={`NavItem ${pathname === '/contact' ? 'active-link' : ''}`} href="/contact">Dev Contact</a>
+                <a className={`NavItem ${pathname === '/contact' ? 'active-link' : ''}`} href="/contact">Contact</a>
             </div>
         </nav>
     );

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { lazy, useState } from 'react'
 import './docs-styles.scss'
 import Buttons, { ButtonProps } from '../../Ui_components/Button/Buttons'
 import Input, { InputProps } from '../../Ui_components/Forms/input-field/Input'
@@ -9,8 +9,9 @@ import DatePicker, { DatePickerProps } from '../../Ui_components/date-pickers/Da
 import ToggleButton, { ToggleButtonProps } from '../../Ui_components/Toggle/Toggle'
 import Dropdown, { DropdownProps } from '../../Ui_components/Drop-down/Drop-down'
 import MultiSelectDropdown, { MultiSelectDropdownProps } from '../../Ui_components/Mult-Select/MultSelect-Dropdown'
-import Accordion from '../../Ui_components/Accordion/Accordion'
-import Tabs from '../../Ui_components/Tabs/Tab'
+
+const Tabs = lazy(() => import('../../Ui_components/Tabs/Tab'))
+const Accordion = lazy(() => import('../../Ui_components/Accordion/Accordion'))
 
 const Docs = () => {
 
@@ -142,20 +143,20 @@ const Docs = () => {
     setSelectedValue(value);
   };
   const radioJson: RadioButtonProps = {
-    label: "option 1",
+    label: "Option 1",
     value: "option1",
     onChange: handleRadioChange,
     name: "radioGroup"// Set the same name for each RadioButton in the group
   }
   const radioJson2: RadioButtonProps = {
-    label: "option 2",
+    label: "Option 2",
     value: "option2",
     checked: true,
     onChange: handleRadioChange,
     name: "radioGroup"// Set the same name for each RadioButton in the group
   }
   const radioJson3: RadioButtonProps = {
-    label: "option 3",
+    label: "Option disabled",
     value: "option3",
     onChange: handleRadioChange,
     disabled: true,
@@ -194,7 +195,7 @@ const Docs = () => {
   const TextinputJson1: TextareaProps = {
     value: textinputValue1,
     onChange: handleTextareaChange1,
-    label: "disabled Text area",
+    label: "Disabled Text area",
     placeholder: "Enter Yout text here",
     disabled: true,
     required: false,
@@ -269,7 +270,7 @@ const Docs = () => {
   const multiSelectJson: MultiSelectDropdownProps = {
     options: ['Option 1', 'Option 2', 'Option 3', 'Option 4', 'Option 5'],
     disabled: false,
-    label: "Select options",
+    label: "Multi Select options",
     onSelect: handleMultiSelect
   }
 
@@ -338,7 +339,7 @@ const Docs = () => {
         </div>
       </div>
       <div className='textarea-item'>
-        <div className='doc-text'>Text Area</div>
+        <div className='doc-text'>Text Areas</div>
         <div className='textarea-components'>
           <div className='textarea-Box'>
             <Textarea {...TextinputJson} />
@@ -357,7 +358,7 @@ const Docs = () => {
         </div>
       </div>
       <div className='dropDown-item'>
-        <div className='doc-text'>Selcteros</div>
+        <div className='doc-text'>Selectors</div>
         <div className='dropDown-components'>
           <div className='dropDown-Box'>
             <Dropdown {...dropDownson} />
