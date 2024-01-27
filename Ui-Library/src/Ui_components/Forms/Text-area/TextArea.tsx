@@ -24,7 +24,7 @@ const Textarea: React.FC<TextareaProps> = ({ ...props }) => {
                 <div className='TEXTAREA___container'>
                     {props.label && <label className='TEXTAREA___label'>{props.label}</label>}
                     <textarea
-                    className='TEXTAREA___textarea disabled'
+                    className='TEXTAREA___textarea .TEXTAREA___disabled'
                         value={props.value}
                         onChange={handleInputChange}
                         maxLength={1000}

@@ -1,7 +1,7 @@
 import ToggleButton, { ToggleButtonProps } from './Ui_components/Forms/Toggle/Toggle'
 
 function App() {
- 
+
   const [isToggled, setIsToggled] = useState<boolean>(false);
 
   const handleToggleChange = (checked: boolean) => {
@@ -14,7 +14,7 @@ function App() {
     checked: isToggled,
     onChange: handleToggleChange
   }
-
+  
   return (
     <div>
       <ToggleButton {...inputJson}/>
