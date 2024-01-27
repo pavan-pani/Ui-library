@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
                 <a className={`NavItem ${pathname === '/' ? 'active-link' : ''}`} href="/">Home</a>
                 <a className={`NavItem ${pathname === '/components' ? 'active-link' : ''}`} href="/components">Components</a>
                 <a className={`NavItem ${pathname === '/how-to-use' ? 'active-link' : ''}`} href="/how-to-use">How to Use</a>
-                <a className={`NavItem ${pathname === '/contact' ? 'active-link' : ''}`} href="/contact">Dev Contact</a>
+                <a className={`NavItem ${pathname === '/contact' ? 'active-link' : ''}`} href="/contact">Contact</a>
             </div>
         </nav>
     );

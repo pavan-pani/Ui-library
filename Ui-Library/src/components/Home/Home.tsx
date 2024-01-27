@@ -2,12 +2,17 @@ import React from 'react'
 import './home-styles.scss'
 import logo from "../../Assets/logo.png"
 import Buttons, { ButtonProps } from '../../Ui_components/Button/Buttons'
+import { useNavigate } from 'react-router-dom'
 
 
 const Home = () => {
+    const navigateTo = useNavigate()
 
     const handleClick = () => {
-
+        navigateTo('/contact', { replace: true })
+    }
+    const handleClick1 = () => {
+        navigateTo('/components', { replace: true })
     }
 
     const inputJson: ButtonProps = {
@@ -18,11 +23,11 @@ const Home = () => {
         onClick: handleClick,
     }
     const inputJson1: ButtonProps = {
-        text: "Docs",
+        text: "Explore",
         variants: "primary",
         disabled: false,
         size: "large",
-        onClick: handleClick,
+        onClick: handleClick1,
     }
     return (
         <div className='container'>
@@ -30,8 +35,8 @@ const Home = () => {
                 <div className='logo'>
                     <img src={logo} alt="Logo" />
                 </div>
-                <div className='discreption'>Don't depend on any other, build you own-Ui </div>
-                <div className='app-discreption'>This Ui library has a most commnoly used components in any project, such as Forms, buttons, Selecters, Tabs Etc. These will help you to build Appliction from sracth by giving you full freedom for customize to mathing your design system</div>
+                <div className='discreption'>Don't depend on any other, build your own-Ui </div>
+                <div className='app-discreption'>This Ui library has a most commonly used components in any project, such as Forms, Buttons, Selectors, Tabs Etc. These will help you to build Appliction from scratch by giving you full freedom for customize to matching your design system.</div>
                 <div className='home_buttons'>
                     <Buttons {...inputJson1} />
                     <Buttons {...inputJson} />
@@ -40,11 +45,11 @@ const Home = () => {
             <div className='right'>
                 <div className='heading'>Key Features</div>
                 <div className='points'>
-                    <div className='point'>No worries on customissing</div>
+                    <div className='point'>No worries on customizing</div>
                     <div className='point'>Match your design system</div>
                     <div className='point'>Freedom in styling</div>
-                    <div className='point'>Easy event handling</div>
-                    <div className='point'>All in one pull</div>
+                    <div className='point'>Easy in event handling</div>
+                    <div className='point'>All in one place</div>
                     <div className='point'>Save you are work and time</div>
                 </div>
             </div>
