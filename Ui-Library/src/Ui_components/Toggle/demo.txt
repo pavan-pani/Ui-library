@@ -1,26 +1,19 @@
-import ToggleButton, { ToggleButtonProps } from './Ui_components/Forms/Toggle/Toggle'
+import Buttons, { ButtonProps } from '../../Ui_components/Button/Buttons'
 
 function App() {
-
-  const [isToggled, setIsToggled] = useState<boolean>(false);
-
-  const handleToggleChange = (checked: boolean) => {
-    setIsToggled(checked);
-  };
-  console.log(isToggled);
-  const inputJson:ToggleButtonProps={
-    offState: "OFF",
-    onState: "ON",
-    checked: isToggled,
-    onChange: handleToggleChange
-  }
-  
-  return (
-    <div>
-      <ToggleButton {...inputJson}/>
-
-      <p>Toggle State: {isToggled ? 'On' : 'Off'}</p>
-    </div>
-  );
+  const handleClick = () => { }
+    const buttonJson1large: ButtonProps = {
+      text: "Primary",
+      variants: "primary",
+      disabled: false,
+      size: "large",
+      onClick: handleClick,
+    }
+    
+    return (
+      <div>
+        <Buttons {...buttonJson1large} />
+      </div>
+    );
 }
 export default App
