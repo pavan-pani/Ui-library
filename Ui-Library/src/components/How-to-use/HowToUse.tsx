@@ -15,7 +15,7 @@ const HowToUse = () => {
       <div className='step-main'>
         <img className='step-num' src={num1}></img>
         <div className='heading'>Download the zip file</div>
-        <div className='subHeading'>Click here to download the file and extract it in your local machine.</div>
+        <div className='subHeading'>Click <a href='https://github.com/pavan-pani/UI-Component'>here</a> to download the file and extract it in your local machine.</div>
       </div>
       <div className='step-main'>
         <img className='step-num' src={num2}></img>
