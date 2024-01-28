@@ -34,7 +34,7 @@ const Home = () => {
                 <div className='logo'>
                     <img src={logo} alt="Logo" />
                 </div>
-                <div className='discreption'>Don't depend on any other, build your own-Ui </div>
+                <div className='discreption'>PavanDon't depend on any other, build your own-Ui </div>
                 <div className='app-discreption'>This Ui library has a most commonly used components in any project, such as Forms, Buttons, Selectors, Tabs Etc. These will help you to build Appliction from scratch by giving you full freedom for customize to matching your design system.</div>
                 <div className='home_buttons'>
                     <Buttons {...inputJson1} />
