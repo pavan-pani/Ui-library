@@ -1,0 +1,21 @@
+// NotFound.scss
+
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+  
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  

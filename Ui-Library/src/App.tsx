@@ -1,5 +1,6 @@
 import { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
+import NotFound from "./components/notfound/NotFound";
 const Home = lazy(() => import("./components/Home/Home"))
 const Docs = lazy(() => import("./components/Docs/Docs"))
 const HowToUse = lazy(() => import("./components/How-to-use/HowToUse"))
@@ -14,6 +15,7 @@ function App() {
       <Route path="/components" element={<Docs />} />
       <Route path="/how-to-use" element={<HowToUse />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
