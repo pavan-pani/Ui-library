@@ -1,7 +1,0 @@
-import{j as t,r as e,_ as s,R as n,a as o}from"./index-m7buZ_27.js";const r=()=>t.jsxs("div",{className:"not-found-container",children:[t.jsx("h1",{children:"404 - Not Found"}),t.jsx("p",{children:"The page you are looking for does not exist."})]}),a=e.lazy(()=>s(()=>import("./Home-sg-wFf4G.js"),__vite__mapDeps([0,1,2,3,4,5,6]))),_=e.lazy(()=>s(()=>import("./Docs-7ZC0lTMx.js"),__vite__mapDeps([7,1,2,4,5,8]))),i=e.lazy(()=>s(()=>import("./HowToUse-_LSnQ8wd.js"),__vite__mapDeps([9,1,2,10]))),x=e.lazy(()=>s(()=>import("./Contact-LVKsvBX_.js"),__vite__mapDeps([11,1,2,12])));function p(){return t.jsxs(n,{children:[t.jsx(o,{path:"/",element:t.jsx(a,{})}),t.jsx(o,{path:"/components",element:t.jsx(_,{})}),t.jsx(o,{path:"/how-to-use",element:t.jsx(i,{})}),t.jsx(o,{path:"/contact",element:t.jsx(x,{})}),t.jsx(o,{path:"*",element:t.jsx(r,{})})]})}export{p as default};
-function __vite__mapDeps(indexes) {
-  if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["assets/Home-sg-wFf4G.js","assets/index-m7buZ_27.js","assets/index-E5orc6tc.css","assets/logo-9Mube3MG.js","assets/Buttons-Cy4T0qhl.js","assets/Buttons-lpuKO3_N.css","assets/Home-dOlZIBvX.css","assets/Docs-7ZC0lTMx.js","assets/Docs-KdIE1vDg.css","assets/HowToUse-_LSnQ8wd.js","assets/HowToUse-y_Ll307P.css","assets/Contact-LVKsvBX_.js","assets/Contact-e2H2nL0-.css"]
-  }
-  return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
-}
