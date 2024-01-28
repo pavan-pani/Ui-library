@@ -1,4 +1,4 @@
-import React, { lazy, useState } from 'react'
+import { lazy, useState } from 'react'
 import './docs-styles.scss'
 import Buttons, { ButtonProps } from '../../Ui_components/Button/Buttons'
 import Input, { InputProps } from '../../Ui_components/Forms/input-field/Input'
