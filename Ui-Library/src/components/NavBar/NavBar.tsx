@@ -8,13 +8,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 const Navbar: React.FC = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const { pathname } = useLocation()
-    const navigate=useNavigate()
-    console.log(pathname);
     
-    useEffect(()=>{
-        navigate(pathname)
-    },[pathname])
-
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
@@ -28,10 +22,10 @@ const Navbar: React.FC = () => {
                 <div className='menu' onClick={toggleMobileMenu}>{isMobileMenuOpen ? <CloseIcon /> : <MenuIcon />}</div>
             </div>
             <div className={`navbar-menu ${isMobileMenuOpen ? 'is-active' : ''}`}>
-                <Link className={`NavItem ${pathname === '/' ? 'active-link' : ''}`} to="/">Home</Link>
-                <Link className={`NavItem ${pathname === '/components' ? 'active-link' : ''}`} to="/components" >Components</Link>
-                <Link className={`NavItem ${pathname === '/how-to-use' ? 'active-link' : ''}`} to="/how-to-use" >How to Use</Link>
-                <Link className={`NavItem ${pathname === '/contact' ? 'active-link' : ''}`} to="/contact">Contact</Link>
+                <a className={`NavItem ${pathname === '/' ? 'active-link' : ''}`} href="/">Home</a>
+                <a className={`NavItem ${pathname === '/components' ? 'active-link' : ''}`} href="/components" >Components</a>
+                <a className={`NavItem ${pathname === '/how-to-use' ? 'active-link' : ''}`} href="/how-to-use" >How to Use</a>
+                <a className={`NavItem ${pathname === '/contact' ? 'active-link' : ''}`} href="/contact">Contact</a>
             </div>
         </nav>
     );
