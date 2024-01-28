@@ -1,0 +1,1 @@
+import{j as s}from"./index-h6zltocm.js";const a=({...t})=>{const n=`${t.variants} ${t.size} ${t.disabled}`;return s.jsx("button",{className:n,type:"button",onClick:t.onClick,children:t.text})};export{a as B};
