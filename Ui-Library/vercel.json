@@ -1,20 +1,6 @@
 {
     "rewrites": [
       { "source": "/(.*)", "destination": "/index.html" }
-    ],
-    "routes":[
-        {
-            "src":"/",
-            "dest":"/"
-        },
-        {
-            "src":"/components",
-            "dest":"/"
-        },
-        {
-            "src":"/how-to-use",
-            "dest":"/"
-        }
     ]
-  }
+}
   
