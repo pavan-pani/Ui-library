@@ -21,9 +21,9 @@ const Toast: React.FC<ToastProps> = ({ type, message }) => {
     };
   }, []);
 
-  const handleClose = () => {
-    setIsVisible(false);
-  };
+  // const handleClose = () => {
+  //   setIsVisible(false);
+  // };
 
   return (
     isVisible && (

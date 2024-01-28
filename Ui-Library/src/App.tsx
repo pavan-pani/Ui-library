@@ -1,4 +1,4 @@
-import { Suspense, lazy } from "react";
+import { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 const Home = lazy(() => import("./components/Home/Home"))
 const Docs = lazy(() => import("./components/Docs/Docs"))

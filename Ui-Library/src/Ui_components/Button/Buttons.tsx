@@ -1,4 +1,4 @@
-import React, { FC, MouseEvent } from 'react';
+import { FC, MouseEvent } from 'react';
 import "./button-style.scss";
 
 //defineing button types and sizes
