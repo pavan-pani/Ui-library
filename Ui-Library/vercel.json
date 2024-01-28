@@ -6,6 +6,14 @@
         {
             "src":"/",
             "dest":"/"
+        },
+        {
+            "src":"/components",
+            "dest":"/"
+        },
+        {
+            "src":"/how-to-use",
+            "dest":"/"
         }
     ]
   }
