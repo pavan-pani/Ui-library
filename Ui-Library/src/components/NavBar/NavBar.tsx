@@ -3,7 +3,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import logo from "../../Assets/logo.png"
 import './navbar-styles.scss';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -23,10 +23,10 @@ const Navbar: React.FC = () => {
                 <div className='menu' onClick={toggleMobileMenu}>{isMobileMenuOpen ? <CloseIcon /> : <MenuIcon />}</div>
             </div>
             <div className={`navbar-menu ${isMobileMenuOpen ? 'is-active' : ''}`}>
-                <a className={`NavItem ${pathname === '/' ? 'active-link' : ''}`} href="/">Home</a>
-                <a className={`NavItem ${pathname === '/components' ? 'active-link' : ''}`} href="/components">Components</a>
-                <a className={`NavItem ${pathname === '/how-to-use' ? 'active-link' : ''}`} href="/how-to-use">How to Use</a>
-                <a className={`NavItem ${pathname === '/contact' ? 'active-link' : ''}`} href="/contact">Contact</a>
+                <Link className={`NavItem ${pathname === '/' ? 'active-link' : ''}`} to="/">Home</Link>
+                <Link className={`NavItem ${pathname === '/components' ? 'active-link' : ''}`} to="/components">Components</Link>
+                <Link className={`NavItem ${pathname === '/how-to-use' ? 'active-link' : ''}`} to="/how-to-use">How to Use</Link>
+                <Link className={`NavItem ${pathname === '/contact' ? 'active-link' : ''}`} to="/contact">Contact</Link>
             </div>
         </nav>
     );

@@ -1,1 +1,0 @@
-import{j as s}from"./index-w0G9E61Y.js";const a=({...t})=>{const n=`${t.variants} ${t.size} ${t.disabled}`;return s.jsx("button",{className:n,type:"button",onClick:t.onClick,children:t.text})};export{a as B};
