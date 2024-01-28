@@ -7,7 +7,7 @@ const Navbar = lazy(() => import('./components/NavBar/NavBar.tsx'))
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Suspense fallback={<h3>Loading...!</h3>}>
         <Navbar />
         <App />
