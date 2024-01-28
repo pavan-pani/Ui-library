@@ -1,8 +1,5 @@
 {
   "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/components", "dest": "/" }
-    { "src": "/how-to-use", "dest": "/" }
-    { "src": "/contact", "dest": "/" }
+    { "src": "/[^.]+", "dest": "/", "status": 200 }
   ]
 }
