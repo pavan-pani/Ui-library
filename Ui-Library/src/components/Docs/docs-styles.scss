@@ -2,272 +2,62 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 20px 100px;
+    padding: 20px 50px; // Adjust padding for smaller screens
     background-color: #faf7ff;
     margin-top: 105px;
 
-    // width: 100%;
-    .btn-item {
-        display: flex;
-        gap: 40px;
-        padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b2b;
-
-        .doc-text {
-            color: #010101;
-            width: 400px;
-            margin-left: 50px;
-            font-size: 35px;
-        }
-
-        .btn-components {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-
-            .large-buttons {
-                display: flex;
-                gap: 40px;
-                flex-wrap: wrap;
-            }
-
-            .medium-buttons {
-                display: flex;
-                gap: 40px;
-                flex-wrap: wrap;
-            }
-        }
-    }
-
-    .input-item {
-        display: flex;
-        gap: 40px;
-        padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b2b;
-
-        .doc-text {
-            color: #010101;
-            width: 400px;
-            margin-left: 50px;
-            font-size: 35px;
-        }
-
-        .input-components {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-
-            .input-boxs {
-                display: flex;
-                gap: 40px;
-                flex-wrap: wrap;
-            }
-        }
-    }
-
-    .CheckBox-item {
-        display: flex;
-        gap: 40px;
-        padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b2b;
-
-        .doc-text {
-            color: #010101;
-            width: 400px;
-            margin-left: 50px;
-            font-size: 35px;
-        }
-
-        .CheckBox-components {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-
-            .Check-Box {
-                display: flex;
-                gap: 40px;
-            }
-        }
-    }
-
-    .radio-item {
-        display: flex;
-        gap: 40px;
-        padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b2b;
-
-        .doc-text {
-            color: #010101;
-            width: 400px;
-            margin-left: 50px;
-            font-size: 35px;
-        }
-
-        .radio-components {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-
-            .radio-Box {
-                display: flex;
-                gap: 40px;
-                flex-wrap: wrap;
-            }
-        }
-    }
-
-    .textarea-item {
-        display: flex;
-        gap: 40px;
-        padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b2b;
-
-        .doc-text {
-            color: #010101;
-            width: 400px;
-            margin-left: 50px;
-            font-size: 35px;
-        }
-
-        .textarea-components {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-
-            .textarea-Box {
-                display: flex;
-                gap: 40px;
-                flex-wrap: wrap;
-            }
-        }
-    }
-
-    .date-item {
-        display: flex;
-        gap: 40px;
-        padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b2b;
-
-        .doc-text {
-            color: #010101;
-            width: 400px;
-            margin-left: 50px;
-            font-size: 35px;
-        }
-
-        .date-components {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-
-            .date-Box {
-                display: flex;
-                gap: 40px;
-                flex-wrap: wrap;
-            }
-        }
-    }
-
-    .dropDown-item {
-        display: flex;
-        gap: 40px;
-        padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b2b;
-
-        .doc-text {
-            color: #010101;
-            width: 400px;
-            margin-left: 50px;
-            font-size: 35px;
-        }
-
-        .dropDown-components {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-
-            .dropDown-Box {
-                display: flex;
-                gap: 40px;
-                flex-wrap: wrap;
-            }
-        }
-    }
-
-    .toggle-item {
-        display: flex;
-        gap: 40px;
-        padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b2b;
-
-        .doc-text {
-            color: #010101;
-            width: 400px;
-            margin-left: 50px;
-            font-size: 35px;
-        }
-
-        .toggle-components {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-
-            .toggle-Box {
-                display: flex;
-                gap: 40px;
-            }
-        }
-    }
-
-    .Accordions-item {
-        display: flex;
-        gap: 40px;
-        padding: 30px 0px;
-        border-bottom: 2px solid #1b1b1b2b;
-
-        .doc-text {
-            color: #010101;
-            width: 400px;
-            margin-left: 50px;
-            font-size: 35px;
-        }
-
-        .Accordions-components {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-
-            .Accordions-Box {
-                display: flex;
-                gap: 40px;
-                max-width: 800px;
-                min-width: 200px;
-            }
-        }
-    }
-
+    .btn-item,
+    .input-item,
+    .CheckBox-item,
+    .radio-item,
+    .textarea-item,
+    .date-item,
+    .dropDown-item,
+    .toggle-item,
+    .Accordions-item,
     .tabs-item {
         display: flex;
-        gap: 40px;
-        padding: 30px 0px;
+        flex-direction: column;
+        gap: 30px; // Reduce gap for smaller screens
+        padding: 20px 0; // Adjust padding for smaller screens
         border-bottom: 2px solid #1b1b1b2b;
 
         .doc-text {
             color: #010101;
-            width: 400px;
-            margin-left: 50px;
-            font-size: 35px;
+            width: 100%; // Make text width responsive
+            margin-left: 30px; // Reset margin for smaller screens
+            font-size: 30px; // Adjust font size for smaller screens
+            // text-align: center; // Center align text for smaller screens
         }
 
+        .btn-components,
+        .input-components,
+        .CheckBox-components,
+        .radio-components,
+        .textarea-components,
+        .date-components,
+        .dropDown-components,
+        .toggle-components,
+        .Accordions-components,
         .tabs-components {
             display: flex;
             flex-direction: column;
-            gap: 25px;
-
+            gap: 20px; // Reduce gap for smaller screens
+            margin-left: 35%;
+            .large-buttons,
+            .medium-buttons,
+            .input-boxs,
+            .Check-Box,
+            .radio-Box,
+            .textarea-Box,
+            .date-Box,
+            .dropDown-Box,
+            .toggle-Box,
+            .Accordions-Box,
             .tabs-Box {
                 display: flex;
-                gap: 40px;
                 flex-wrap: wrap;
+                gap: 20px; // Adjust gap for smaller screens
             }
         }
     }
@@ -276,85 +66,524 @@
         color: #6902f0 !important;
         font-family: 'Catamaran', sans-serif;
         letter-spacing: 1px;
+        font-weight: 700;
+    }
+
+    @media screen and (max-width: 768px) {
+        .doc-container {
+            padding: 20px; // Adjust padding for smaller screens
+            margin-top: 56px !important;
+        }
+        .btn-components,
+        .input-components,
+        .CheckBox-components,
+        .radio-components,
+        .textarea-components,
+        .date-components,
+        .dropDown-components,
+        .toggle-components,
+        .Accordions-components,
+        .tabs-components {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; // Reduce gap for smaller screens
+            margin-left: 0px !important;
+        }
+
+        .btn-item .doc-text,
+        .input-item .doc-text,
+        .CheckBox-item .doc-text,
+        .radio-item .doc-text,
+        .textarea-item .doc-text,
+        .date-item .doc-text,
+        .dropDown-item .doc-text,
+        .toggle-item .doc-text,
+        .Accordions-item .doc-text,
+        .tabs-item .doc-text {
+            font-size: 25px; // Adjust font size for smaller screens
+            text-align: center;
+            margin-left: 0px !important;
+        }
+        .TEXTAREA___textarea {
+            width: 250px !important;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .doc-container {
+            padding: 10px; // Adjust padding for smaller screens
+            margin-top: 56px;
+        }
+
+        .btn-item .doc-text,
+        .input-item .doc-text,
+        .CheckBox-item .doc-text,
+        .radio-item .doc-text,
+        .textarea-item .doc-text,
+        .date-item .doc-text,
+        .dropDown-item .doc-text,
+        .toggle-item .doc-text,
+        .Accordions-item .doc-text,
+        .tabs-item .doc-text {
+            font-size: 20px !important; // Adjust font size for smaller screens
+        }
+       
     }
 }
-
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .doc-container {
-        padding: 5px 20px !important;
-        margin-top: 56px;
-        width: fit-content;
-        width: auto;
-
-        .btn-item,
-        .input-item,
-        .CheckBox-item,
-        .radio-item,
-        .date-item,
-        .dropDown-item,
-        .toggle-item,
-        .Accordions-item,
-        .tabs-item {
-            flex-direction: column;
-            padding: 15px 15px !important;
-
-            .doc-text {
-                margin-left: 0px !important;
-                font-size: 25px !important;
-            }
-
-            .btn-components,
-            .input-components,
-            .CheckBox-components,
-            .radio-components,
-            .tabs-components,
-            .tabs-components,
-            .dropDown-components,
-            .toggle-components {
-                justify-content: center;
-                align-items: center;
-
-                .input-boxs {
-                    justify-content: center;
-                }
-
-                .textarea-Box {
-                    justify-content: center;
-                }
-
-                .date-Box {
-                    justify-content: center !important;
-                }
-            }
-
-        }
-
-        .textarea-item {
-            flex-direction: column;
-            padding: 15px 15px !important;
-
-            .doc-text {
-                margin-left: 0px !important;
-                font-size: 25px !important;
-            }
-
-            .TEXTAREA___textarea {
-                width: 300px !important;
-            }
-        }
-
+        margin-top: 56px; 
     }
-
-    .doc-container .textarea-item .textarea-components .textarea-Box {
-        justify-content: center;
-    }
-
-    .doc-container .date-item .date-components .date-Box {
-        justify-content: center;
-    }
+    
 }
 
-.doc-text {
-    font-weight: 600;
-    font-size: 33px !important;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .doc-container {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     padding: 20px 100px;
+//     background-color: #faf7ff;
+//     margin-top: 105px;
+
+//     // width: 100%;
+//     .btn-item {
+//         display: flex;
+//         gap: 40px;
+//         padding: 30px 0px;
+//         border-bottom: 2px solid #1b1b1b2b;
+
+//         .doc-text {
+//             color: #010101;
+//             width: 400px;
+//             margin-left: 50px;
+//             font-size: 35px;
+//         }
+
+//         .btn-components {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 25px;
+
+//             .large-buttons {
+//                 display: flex;
+//                 gap: 40px;
+//                 flex-wrap: wrap;
+//             }
+
+//             .medium-buttons {
+//                 display: flex;
+//                 gap: 40px;
+//                 flex-wrap: wrap;
+//             }
+//         }
+//     }
+
+//     .input-item {
+//         display: flex;
+//         gap: 40px;
+//         padding: 30px 0px;
+//         border-bottom: 2px solid #1b1b1b2b;
+
+//         .doc-text {
+//             color: #010101;
+//             width: 400px;
+//             margin-left: 50px;
+//             font-size: 35px;
+//         }
+
+//         .input-components {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 25px;
+
+//             .input-boxs {
+//                 display: flex;
+//                 gap: 40px;
+//                 flex-wrap: wrap;
+//             }
+//         }
+//     }
+
+//     .CheckBox-item {
+//         display: flex;
+//         gap: 40px;
+//         padding: 30px 0px;
+//         border-bottom: 2px solid #1b1b1b2b;
+
+//         .doc-text {
+//             color: #010101;
+//             width: 400px;
+//             margin-left: 50px;
+//             font-size: 35px;
+//         }
+
+//         .CheckBox-components {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 25px;
+
+//             .Check-Box {
+//                 display: flex;
+//                 gap: 40px;
+//             }
+//         }
+//     }
+
+//     .radio-item {
+//         display: flex;
+//         gap: 40px;
+//         padding: 30px 0px;
+//         border-bottom: 2px solid #1b1b1b2b;
+
+//         .doc-text {
+//             color: #010101;
+//             width: 400px;
+//             margin-left: 50px;
+//             font-size: 35px;
+//         }
+
+//         .radio-components {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 25px;
+
+//             .radio-Box {
+//                 display: flex;
+//                 gap: 40px;
+//                 flex-wrap: wrap;
+//             }
+//         }
+//     }
+
+//     .textarea-item {
+//         display: flex;
+//         gap: 40px;
+//         padding: 30px 0px;
+//         border-bottom: 2px solid #1b1b1b2b;
+
+//         .doc-text {
+//             color: #010101;
+//             width: 400px;
+//             margin-left: 50px;
+//             font-size: 35px;
+//         }
+
+//         .textarea-components {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 25px;
+
+//             .textarea-Box {
+//                 display: flex;
+//                 gap: 40px;
+//                 flex-wrap: wrap;
+//             }
+//         }
+//     }
+
+//     .date-item {
+//         display: flex;
+//         gap: 40px;
+//         padding: 30px 0px;
+//         border-bottom: 2px solid #1b1b1b2b;
+
+//         .doc-text {
+//             color: #010101;
+//             width: 400px;
+//             margin-left: 50px;
+//             font-size: 35px;
+//         }
+
+//         .date-components {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 25px;
+
+//             .date-Box {
+//                 display: flex;
+//                 gap: 40px;
+//                 flex-wrap: wrap;
+//             }
+//         }
+//     }
+
+//     .dropDown-item {
+//         display: flex;
+//         gap: 40px;
+//         padding: 30px 0px;
+//         border-bottom: 2px solid #1b1b1b2b;
+
+//         .doc-text {
+//             color: #010101;
+//             width: 400px;
+//             margin-left: 50px;
+//             font-size: 35px;
+//         }
+
+//         .dropDown-components {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 25px;
+
+//             .dropDown-Box {
+//                 display: flex;
+//                 gap: 40px;
+//                 flex-wrap: wrap;
+//             }
+//         }
+//     }
+
+//     .toggle-item {
+//         display: flex;
+//         gap: 40px;
+//         padding: 30px 0px;
+//         border-bottom: 2px solid #1b1b1b2b;
+
+//         .doc-text {
+//             color: #010101;
+//             width: 400px;
+//             margin-left: 50px;
+//             font-size: 35px;
+//         }
+
+//         .toggle-components {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 25px;
+
+//             .toggle-Box {
+//                 display: flex;
+//                 gap: 40px;
+//             }
+//         }
+//     }
+
+//     .Accordions-item {
+//         display: flex;
+//         gap: 40px;
+//         padding: 30px 0px;
+//         border-bottom: 2px solid #1b1b1b2b;
+
+//         .doc-text {
+//             color: #010101;
+//             width: 400px;
+//             margin-left: 50px;
+//             font-size: 35px;
+//         }
+
+//         .Accordions-components {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 25px;
+
+//             .Accordions-Box {
+//                 display: flex;
+//                 gap: 40px;
+//                 max-width: 800px;
+//                 min-width: 200px;
+//             }
+//         }
+//     }
+
+//     .tabs-item {
+//         display: flex;
+//         gap: 40px;
+//         padding: 30px 0px;
+//         border-bottom: 2px solid #1b1b1b2b;
+
+//         .doc-text {
+//             color: #010101;
+//             width: 400px;
+//             margin-left: 50px;
+//             font-size: 35px;
+//         }
+
+//         .tabs-components {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 25px;
+
+//             .tabs-Box {
+//                 display: flex;
+//                 gap: 40px;
+//                 flex-wrap: wrap;
+//             }
+//         }
+//     }
+
+//     .doc-text {
+//         color: #6902f0 !important;
+//         font-family: 'Catamaran', sans-serif;
+//         letter-spacing: 1px;
+//     }
+// }
+
+// @media screen and (max-width: 768px) {
+//     .doc-container {
+//         padding: 5px 20px !important;
+//         margin-top: 56px;
+//         width: fit-content;
+//         // width: auto;
+
+//         .btn-item,
+//         .input-item,
+//         .CheckBox-item,
+//         .radio-item,
+//         .date-item,
+//         .dropDown-item,
+//         .toggle-item,
+//         .Accordions-item,
+//         .tabs-item {
+//             flex-direction: column;
+//             padding: 15px 15px !important;
+
+//             .doc-text {
+//                 margin-left: 0px !important;
+//                 font-size: 25px !important;
+//             }
+
+//             .btn-components,
+//             .input-components,
+//             .CheckBox-components,
+//             .radio-components,
+//             .tabs-components,
+//             .tabs-components,
+//             .dropDown-components,
+//             .toggle-components {
+//                 justify-content: center;
+//                 align-items: center;
+
+//                 .input-boxs {
+//                     justify-content: center;
+//                 }
+
+//                 .textarea-Box {
+//                     justify-content: center;
+//                 }
+
+//                 .date-Box {
+//                     justify-content: center !important;
+//                 }
+//             }
+
+//         }
+
+//         .textarea-item {
+//             flex-direction: column;
+//             padding: 15px 15px !important;
+
+//             .doc-text {
+//                 margin-left: 0px !important;
+//                 font-size: 25px !important;
+//             }
+
+//             .TEXTAREA___textarea {
+//                 width: 250px !important;
+//             }
+//         }
+
+//     }
+
+//     .doc-container .textarea-item .textarea-components .textarea-Box {
+//         justify-content: center;
+//     }
+
+//     .doc-container .date-item .date-components .date-Box {
+//         justify-content: center;
+//     }
+// }
+
+// @media screen and (max-width: 350px) {
+//     .doc-container {
+//         padding: 5px 20px !important;
+//         margin-top: 56px;
+//         // width: fit-content;
+//         width: auto;
+
+//         .btn-item,
+//         .input-item,
+//         .CheckBox-item,
+//         .radio-item,
+//         .date-item,
+//         .dropDown-item,
+//         .toggle-item,
+//         .Accordions-item,
+//         .tabs-item {
+//             flex-direction: column;
+//             padding: 15px 15px !important;
+
+//             .doc-text {
+//                 margin-left: 0px !important;
+//                 font-size: 20px !important;
+//             }
+
+//             .btn-components,
+//             .input-components,
+//             .CheckBox-components,
+//             .radio-components,
+//             .tabs-components,
+//             .tabs-components,
+//             .dropDown-components,
+//             .toggle-components {
+//                 justify-content: start;
+//                 align-items: start;
+
+//                 .input-boxs {
+//                     justify-content: start;
+//                 }
+
+//                 .textarea-Box {
+//                     justify-content: start;
+//                 }
+
+//                 .date-Box {
+//                     justify-content: start !important;
+//                 }
+//             }
+
+//         }
+
+//         .textarea-item {
+//             flex-direction: column;
+//             padding: 15px 15px !important;
+
+//             .doc-text {
+//                 margin-left: 0px !important;
+//                 font-size: 20px !important;
+//             }
+
+//             .TEXTAREA___textarea {
+//                 width: 200px !important;
+//             }
+//         }
+
+//     }
+
+// }
+// .doc-text {
+//     font-weight: 600;
+//     font-size: 33px !important;
+// }
