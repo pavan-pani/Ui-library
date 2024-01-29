@@ -25,7 +25,7 @@
         .doc-text {
             color: #010101;
             width: 100%; // Make text width responsive
-            margin-left: 0; // Reset margin for smaller screens
+            margin-left: 30px; // Reset margin for smaller screens
             font-size: 30px; // Adjust font size for smaller screens
             // text-align: center; // Center align text for smaller screens
         }
@@ -43,7 +43,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px; // Reduce gap for smaller screens
-            margin-left: 500px;
+            margin-left: 35%;
             .large-buttons,
             .medium-buttons,
             .input-boxs,
@@ -102,6 +102,7 @@
         .tabs-item .doc-text {
             font-size: 25px; // Adjust font size for smaller screens
             text-align: center;
+            margin-left: 0px !important;
         }
         .TEXTAREA___textarea {
             width: 250px !important;
@@ -129,7 +130,7 @@
        
     }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .doc-container {
         margin-top: 56px; 
     }
